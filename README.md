@@ -6,8 +6,8 @@ Cours d'introduction à la programmation en Python (Cégep de Trois-Rivières, a
 
 ## Cours 01 — Introduction
 
-- [1.1 — Introduction à Python](Cours 01/1.1 - Introduction à Python.md)
-- [1.2 — Langages de programmation](Cours 01/1.2 - Langages de programmation.md)
+- [1.1 — Langages de programmation](Cours 01/1.1 - Langages de programmation.md)
+- [1.2 — Introduction à Python](Cours 01/1.2 - Introduction à Python.md)
 - [1.3 — Algorithmique](Cours 01/1.3 - Algorithmique.md)
 - [1.4 — Pseudo-code](Cours 01/1.4 - Pseudo-code.md)
 - [1.5 — Installation de Python et de l'IDE](Cours 01/1.5 - Installation de Python et de l'IDE.md)
