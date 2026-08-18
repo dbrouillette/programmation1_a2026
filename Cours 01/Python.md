@@ -1,0 +1,113 @@
+# Cours 01 - Introduction à Python
+
+## Objectifs
+
+- Comprendre ce qu’est Python et pourquoi il est adapté aux débutants.
+- Savoir écrire un premier programme Python simple.
+- Exécuter un script Python avec l’interpréteur.
+- Connaître les étapes du cycle d’exécution d’un script.
+
+## Pourquoi Python ?
+
+Selon [Wikipedia](https://fr.wikipedia.org/wiki/Python_(langage)) :
+
+> Python est un langage de programmation interprété, multi-paradigme et multiplateformes. Il favorise la programmation impérative structurée, fonctionnelle et orientée objet. Il est doté d'un typage dynamique fort, d'une gestion automatique de la mémoire par ramasse-miettes et d'un système de gestion d'exceptions.
+>
+> Python est un langage libre, créé par Guido van Rossum en 1989, dont le nom fait référence à la troupe des Monty Python.
+>
+> Il est aujourd'hui l'un des langages les plus utilisés au monde, notamment en science des données, en intelligence artificielle, en développement web et pour l'enseignement de la programmation, grâce à sa syntaxe simple et lisible.
+
+Python est apprécié pour sa syntaxe claire, sa grande bibliothèque standard et sa facilité de démarrage. Ce n’est pas un langage réservé aux spécialistes : il est utilisé par des débutants, des scientifiques, des développeurs web et des ingénieurs en intelligence artificielle.
+
+### 🎥 Vidéo explicative
+
+[![Regarder](https://img.youtube.com/vi/FPfzGFYuOLU/maxresdefault.jpg)](https://youtu.be/FPfzGFYuOLU)
+
+*Cette vidéo présente les bases du langage Python.*
+
+## Fonctionnement d'un programme Python
+
+Python est un langage interprété. Cela signifie que l’on écrit du code source dans un fichier, puis que l’interpréteur Python lit et exécute ce code.
+
+### Étapes du cycle d’exécution
+
+1. Écriture du code source dans un fichier `.py`.
+2. Lancement de l’interpréteur Python sur le fichier.
+3. Traduction interne en *bytecode* et exécution.
+4. Résultats affichés à l’écran ou produits par le programme.
+
+### Exemple : premier programme
+
+Crée un fichier `bonjour.py` contenant :
+
+```python
+print("Bonjour le monde!")
+```
+
+Ensuite, exécute ce fichier depuis un terminal :
+
+```powershell
+PS C:\Utilisateurs\maxime> python bonjour.py
+```
+
+Résultat :
+
+```text
+Bonjour le monde!
+```
+
+### Que se passe-t-il ?
+
+- `bonjour.py` est le code source que tu as écrit.
+- L’interpréteur Python lit ce code.
+- Python génère un bytecode interne (stocké automatiquement dans `__pycache__` si nécessaire).
+- Le programme s’exécute et affiche le message.
+
+## Exemple guidé : aire d’un rectangle
+
+Voici un programme simple qui calcule l’aire d’un rectangle :
+
+```python
+largeur = 5
+hauteur = 3
+aire = largeur * hauteur
+print(f"Aire du rectangle : {aire} unités carrées")
+```
+
+Ce code montre plusieurs notions importantes :
+
+- création et utilisation de variables ;
+- usage d’une expression arithmétique ;
+- affichage formaté avec une `f-string`.
+
+### 🎥 Vidéo explicative
+
+[![Regarder](https://img.youtube.com/vi/lEeC5UxWmHU/maxresdefault.jpg)](https://youtu.be/lEeC5UxWmHU)
+
+*Cette vidéo montre comment créer et exécuter un premier programme Python en ligne de commande et dans VS Code.*
+
+## Caractéristiques de Python
+
+| Caractéristique | Python |
+|---|---|
+| Étape de compilation manuelle | ❌ Aucune (`python fichier.py` suffit) |
+| Fichier intermédiaire | `.pyc` (généré automatiquement, invisible) |
+| Typage | Dynamique (le type d'une variable peut changer) |
+| Syntaxe | Lisible et expressive |
+
+## Exercice
+
+1. Que fait le programme `bonjour.py` ?
+2. Quelle commande permet d’exécuter `bonjour.py` ?
+3. Écris un programme `presentation.py` qui affiche ton prénom et ton âge sur deux lignes différentes.
+
+## À retenir
+
+- Python est un langage interprété : tu écris un fichier `.py`, puis tu l’exécutes avec `python fichier.py`.
+- Il n’y a pas d’étape de compilation séparée à lancer manuellement.
+- Un programme Python peut être très simple et s’exécute de haut en bas.
+- Les `f-strings` permettent ensuite d’afficher des résultats clairs et lisibles.
+
+## Visual Studio Code
+
+Nous utiliserons [Visual Studio Code](https://code.visualstudio.com/) comme environnement de développement pour écrire, exécuter et déboguer du code Python.
