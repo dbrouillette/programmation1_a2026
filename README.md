@@ -11,6 +11,10 @@
 - [1.5 — Installation de Python et de l'IDE](./Cours%2001/1.5%20-%20Installation%20de%20Python%20et%20de%20l'IDE.md)
 - [1.6 — Introduction à Git](./Cours%2001/1.6%20-%20Introduction%20à%20Git.md)
 
+## Outils / Références
+
+- [Raccourcis VS Code](./Raccourcis_VSCode.md)
+
 ---
 
 *Les cours suivants seront ajoutés à cette table des matières au fur et à mesure de la session.*
