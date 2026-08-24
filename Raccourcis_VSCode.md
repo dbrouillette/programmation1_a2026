@@ -3,7 +3,7 @@
 ## Édition de base
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + X` | Coupe la ligne |
 | `Ctrl + C` | Copie la ligne |
 | `Alt + ↑/↓` | Déplace la ligne vers le haut ou le bas |
@@ -33,7 +33,7 @@
 ## Navigation
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + T` | Montre tous les symboles |
 | `Ctrl + G` | Accéder à la ligne/colonne |
 | `Ctrl + Maj + O` | Accéder au symbole |
@@ -47,7 +47,7 @@
 ## Sélection
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Alt + Click` | Insère le curseur |
 | `Ctrl + Alt + ↑/↓` | Insère le curseur au-dessus ou en-dessous |
 | `Ctrl + U` | Annulation du curseur |
@@ -64,7 +64,7 @@
 ## Général
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + Maj + P` ou `F1` | Ouvre la palette de commandes |
 | `Ctrl + P` | Atteindre le fichier... |
 | `Ctrl + Maj + N` | Ouvrir une nouvelle fenêtre |
@@ -75,7 +75,7 @@
 ## Recherche et remplace
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + F` | Recherche |
 | `Ctrl + H` | Remplace |
 | `F3` ou `Maj + F3` | Recherche le prochain/précédent |
@@ -87,7 +87,7 @@
 ## Édition Langue
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + Espace` | Suggestion pour Trigger |
 | `Ctrl + Maj + Espace` | Indicateurs des paramètres Trigger |
 | `Ctrl + K Ctrl + F` | Mettre la sélection en forme |
@@ -103,7 +103,7 @@
 ## Gestion de l'éditeur
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + F4` ou `Ctrl + W` | Ferme l'éditeur |
 | `Ctrl + K F` | Ferme l'espace de travail |
 | `Ctrl + \` | Sépare l'éditeur |
@@ -115,7 +115,7 @@
 ## Affichage
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `F11` | Plein écran |
 | `Maj + Alt + 0` | Active/Désactive la disposition verticale/horizontale |
 | `Ctrl + =/-` | Zoom avant/arrière |
@@ -135,7 +135,7 @@
 ## Gestion des fichiers
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `Ctrl + N` | Nouveau fichier |
 | `Ctrl + O` | Ouvrir un fichier |
 | `Ctrl + S` | Enregistrer |
@@ -154,7 +154,7 @@
 ## Débogage
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `F9` | Active/Désactive un point d'arrêt |
 | `F5` | Démarrer ou continuer le débogage |
 | `Maj + F5` | Arrêter |
@@ -165,7 +165,7 @@
 ## Terminal
 
 | Raccourci | Signification |
-|---|---|
+| --- | --- |
 | `` Ctrl + ` `` | Active/Désactive le terminal |
 | `` Ctrl + Maj + ` `` | Créer un nouveau terminal |
 | `Ctrl + C` | Copie la sélection |
@@ -175,4 +175,5 @@
 | `Ctrl + Home/End` | Permet de défiler au début/fin du terminal |
 
 ---
-*Source : affiche VS Code, Maé Grenier, 2024 — Cégep de Trois-Rivières, Département d'informatique*
+
+*Source* : affiche VS Code, Maé Grenier, 2024 — Cégep de Trois-Rivières, Département d'informatique
