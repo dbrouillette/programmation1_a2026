@@ -67,7 +67,13 @@ Les tests vérifient que l'affichage contient bien `<class 'int'>`, `<class 'flo
 
 ## Corriger ton travail
 
-Dans le dossier `Exercices`, lance :
+Dans le dossier `Exercices`, lance le vérificateur coloré — les tests réussis apparaissent **en vert** :
+
+```bash
+python verifier.py
+```
+
+Tu peux aussi passer par unittest directement :
 
 ```bash
 python -m unittest test_exercice_1.py
