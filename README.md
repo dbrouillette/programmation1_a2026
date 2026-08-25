@@ -18,6 +18,7 @@
 - [2.3 — Constantes](./Cours%2002/2.3%20-%20Constantes.md)
 - [2.4 — Opérateurs arithmétiques](./Cours%2002/2.4%20-%20Opérateurs%20arithmétiques.md)
 - [2.5 — Opérateurs d'assignation](./Cours%2002/2.5%20-%20Opérateurs%20d'assignation.md)
+- [2.6 — Lire une erreur de syntaxe](./Cours%2002/2.6%20-%20Lire%20une%20erreur%20de%20syntaxe.md)
 
 ## Outils / Références
 
