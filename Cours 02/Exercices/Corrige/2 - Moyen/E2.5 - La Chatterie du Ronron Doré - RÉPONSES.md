@@ -9,7 +9,7 @@
 Avec `chats = 17` et `croquettes = 100` :
 
 | # | Expression | Résultat | Type | Explication |
-|:---:|---|---|:---:|---|
+| :---: | --- | --- | :---: | --- |
 | 1 | `croquettes / chats` | `5.882352941176471` | `float` | La division `/` retourne **toujours** un `float`, même entre deux `int`. |
 | 2 | `croquettes // chats` | `5` | `int` | Division entière : 17 × 5 = 85 ≤ 100, la partie décimale est tronquée. |
 | 3 | `croquettes % chats` | `15` | `int` | Reste : 100 − 85 = 15 croquettes en trop. |
@@ -23,7 +23,7 @@ Avec `chats = 17` et `croquettes = 100` :
 ## Partie 2 — La journée de Mme Moustache 🧶
 
 | Ligne | Instruction | Équivalence | Résultat |
-|:---:|---|---|---|
+| :---: | --- | --- | --- |
 | 1 | `croquettes -= 40` | `croquettes = 240 - 40` | `croquettes = 200` |
 | 2 | `croquettes //= chats` | `croquettes = 200 // 6` | `croquettes = 33` (et non 33.33!) |
 | 3 | `chats += 2` | `chats = 6 + 2` | `chats = 8` |
@@ -57,7 +57,7 @@ Avec `siestes = 12`, `souris = 5`, `boules_de_poils = 3` :
 ## Partie 4 — La roue des corvées 🔁
 
 | Jour | Calcul | Reste | Responsable |
-|:---:|---|:---:|---|
+| :---: | --- | :---: | --- |
 | 7 | `7 % 3` (6 + 1) | `1` | **Bob** |
 | 11 | `11 % 3` (9 + 2) | `2` | **Chloé** |
 | 30 | `30 % 3` (30 + 0) | `0` | **Alice** |
@@ -87,7 +87,7 @@ print(f"Chats nourris avec le reste : {chats_avec_reste}")
 
 **Sortie :**
 
-```
+```text
 Ration quotidienne de la chatterie : 315 g
 Jours complets : 6
 Restant dans le sac : 110 g
@@ -108,7 +108,7 @@ Chats nourris avec le reste : 2
 ## Partie 6 — Vrai ou faux? 🤔
 
 | # | Affirmation | Réponse | Explication |
-|:---:|---|:---:|---|
+| :---: | --- | :---: | --- |
 | 1 | `10 / 2` donne `5` (un `int`) | ❌ **Faux** | `/` retourne toujours un `float` : le résultat est `5.0`. |
 | 2 | `chats++` ajoute 1 | ❌ **Faux** | Python n'a **pas** de `++` ni de `--` → `SyntaxError`. Il faut écrire `chats += 1`. |
 | 3 | `croquettes //= 3` peut donner un `float` | ❌ **Faux** | `//` entre deux `int` donne un `int`. *(Ce serait vrai si un des deux opérandes était un `float` : `7.0 // 3` → `2.0`.)* |
