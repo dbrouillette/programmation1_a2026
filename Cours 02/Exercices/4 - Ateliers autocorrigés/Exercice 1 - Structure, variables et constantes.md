@@ -1,6 +1,6 @@
 # Exercice 1 — Structure, variables et constantes
 
-> **Sections couvertes :** [2.1 Généralités](../2.1%20-%20Généralités.md), [2.2 Variables](../2.2%20-%20Variables.md), [2.3 Constantes](../2.3%20-%20Constantes.md)  
+> **Sections couvertes :** [2.1 Généralités](../../2.1%20-%20Généralités.md), [2.2 Variables](../../2.2%20-%20Variables.md), [2.3 Constantes](../../2.3%20-%20Constantes.md)  
 > **Durée :** 60 minutes  
 > **Fichier à compléter :** `exercice_1.py`  
 > **Correction :** `python -m unittest test_exercice_1.py`  
