@@ -2,7 +2,7 @@
 
 ## ➕ Opérateurs mathématiques
 
-1. `total = 4 + 5 + 6` → 15
+1. `total = chat1 + chat2 + chat3 = 4 + 5 + 6` → 15
 2. `difference = 7 - 4` → 3
 3. `griffes = 5 * 4 * 3` → 60
 4. `par_chat = 90 // 3` → 30
