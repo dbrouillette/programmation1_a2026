@@ -1,19 +1,64 @@
 # Exercices — Cours 02
 
-Deux exercices d'une heure, autocorrigés par des tests unitaires.
+Les exercices sont classés **par niveau de difficulté**. Commence par le niveau *Facile* et monte graduellement : chaque niveau suppose que le précédent est acquis.
 
-|Exercice|Sections|Durée|Fichier à compléter|
-|---|---|:---:|---|
-|[Exercice 1 — Structure, variables et constantes](./Exercice%201%20-%20Structure,%20variables%20et%20constantes.md)|2.1 à 2.3|60 min|`exercice_1.py`|
-|[Exercice 2 — Opérateurs et erreurs de syntaxe](./Exercice%202%20-%20Opérateurs%20et%20erreurs%20de%20syntaxe.md)|2.4 à 2.6|60 min|`exercice_2.py`, `exercice_2_debogage.py`|
+## Nomenclature
 
-## Marche à suivre
+```
+E2.4 - Opérateurs arithmétiques par niveaux.md
+│ │
+│ └── numéro séquentiel, du plus facile au plus difficile
+└──── E = Exercice, 2 = Cours 02
+```
 
-### 1. Récupérer les fichiers
+Le corrigé de chaque exercice porte le **même nom suffixé de ` - RÉPONSES`**, dans le dossier [Corrige/](./Corrige/) qui reprend la même arborescence.
+
+## 🟢 [1 - Facile](./1%20-%20Facile/)
+
+Reconnaissance et application directe. Aucun calcul en chaîne.
+
+|Exercice|Sections|Notion|
+|---|:---:|---|
+|[E2.1 — Noms de variables](./1%20-%20Facile/E2.1%20-%20Noms%20de%20variables.md)|2.2|Identifiants valides ou non|
+|[E2.2 — Types de données](./1%20-%20Facile/E2.2%20-%20Types%20de%20données.md)|2.2|`int`, `float`, `bool`, `str`|
+|[E2.3 — Opérateurs félins](./1%20-%20Facile/E2.3%20-%20Opérateurs%20félins.md)|2.4, 2.5|Mise en situation, une opération à la fois|
+
+## 🟡 [2 - Moyen](./2%20-%20Moyen/)
+
+Priorité des opérations, pièges de types, affectation combinée.
+
+|Exercice|Sections|Notion|
+|---|:---:|---|
+|[E2.4 — Opérateurs arithmétiques par niveaux](./2%20-%20Moyen/E2.4%20-%20Opérateurs%20arithmétiques%20par%20niveaux.md)|2.4, 2.5|Prédire l'affichage, difficulté croissante|
+|[E2.5 — La Chatterie du Ronron Doré](./2%20-%20Moyen/E2.5%20-%20La%20Chatterie%20du%20Ronron%20Doré.md)|2.4, 2.5|Parcours ludique complet + petit programme|
+
+## 🔴 [3 - Difficile](./3%20-%20Difficile/)
+
+Expressions longues, cas limites, valeurs négatives.
+
+|Exercice|Sections|Notion|
+|---|:---:|---|
+|[E2.6 — Expressions indépendantes](./3%20-%20Difficile/E2.6%20-%20Expressions%20indépendantes.md)|2.4, 2.5|10 expressions autonomes, niveaux avancé à expert|
+|[E2.7 — Expressions cumulatives](./3%20-%20Difficile/E2.7%20-%20Expressions%20cumulatives.md)|2.4, 2.5|État partagé entre les 10 étapes, dont une exception|
+
+> ⚠️ **E2.7 est le plus exigeant** : les résultats se propagent d'une ligne à l'autre, et une étape provoque volontairement une `ZeroDivisionError`. Fais-le en dernier.
+
+## ⚙️ [4 - Ateliers autocorrigés](./4%20-%20Ateliers%20autocorrigés/)
+
+Deux ateliers d'une heure, corrigés automatiquement par des tests unitaires.
+
+|Atelier|Sections|Durée|Fichier à compléter|
+|---|:---:|:---:|---|
+|[Exercice 1 — Structure, variables et constantes](./4%20-%20Ateliers%20autocorrigés/Exercice%201%20-%20Structure,%20variables%20et%20constantes.md)|2.1 à 2.3|60 min|`exercice_1.py`|
+|[Exercice 2 — Opérateurs et erreurs de syntaxe](./4%20-%20Ateliers%20autocorrigés/Exercice%202%20-%20Opérateurs%20et%20erreurs%20de%20syntaxe.md)|2.4 à 2.6|60 min|`exercice_2.py`, `exercice_2_debogage.py`|
+
+### Marche à suivre
+
+**1. Récupérer les fichiers**
 
 ```bash
 git clone <adresse-du-depot>
-cd "programmation1_a2026/Cours 02/Exercices"
+cd "programmation1_a2026/Cours 02/Exercices/4 - Ateliers autocorrigés"
 ```
 
 Si tu as déjà cloné le dépôt, mets-le simplement à jour :
@@ -22,16 +67,16 @@ Si tu as déjà cloné le dépôt, mets-le simplement à jour :
 git pull
 ```
 
-### 2. Compléter l'exercice
+**2. Compléter l'atelier**
 
 Ouvre le fichier `.py` correspondant et remplace chaque `None` par ta réponse. **Ne renomme aucune variable** : les tests s'appuient sur ces noms exacts.
 
-### 3. Se corriger
+**3. Se corriger**
 
-⚠️ **Place-toi d'abord dans le dossier `Exercices`.** C'est l'erreur la plus fréquente :
+⚠️ **Place-toi d'abord dans le dossier `4 - Ateliers autocorrigés`.** C'est l'erreur la plus fréquente :
 
 ```bash
-cd "Cours 02/Exercices"
+cd "Cours 02/Exercices/4 - Ateliers autocorrigés"
 python -m unittest test_exercice_1.py
 python -m unittest test_exercice_2.py
 ```
@@ -42,12 +87,12 @@ Si tu lances la commande depuis un autre dossier, tu obtiendras :
 ModuleNotFoundError: No module named 'test_exercice_1'
 ```
 
-Ce message ne veut **pas** dire que ton travail est mauvais : Python ne trouve simplement pas le fichier. Fais `cd` dans le dossier `Exercices` et relance.
+Ce message ne veut **pas** dire que ton travail est mauvais : Python ne trouve simplement pas le fichier. Fais `cd` dans le bon dossier et relance.
 
 **Méthode qui fonctionne depuis n'importe où** — donne le chemin complet du fichier de test :
 
 ```bash
-python "Cours 02/Exercices/test_exercice_1.py"
+python "Cours 02/Exercices/4 - Ateliers autocorrigés/test_exercice_1.py"
 ```
 
 Ajoute `-v` pour voir le résultat de chaque test un par un :
@@ -56,20 +101,20 @@ Ajoute `-v` pour voir le résultat de chaque test un par un :
 python -m unittest -v test_exercice_1.py
 ```
 
-Pour lancer les deux suites d'un coup, depuis le dossier `Exercices` :
+Pour lancer les deux suites d'un coup :
 
 ```bash
 python -m unittest discover -p "test_*.py"
 ```
 
-### 3bis. Affichage coloré (recommandé)
+**3bis. Affichage coloré (recommandé)**
 
 Le lanceur `verifier.py` affiche **en vert** chaque test réussi et en rouge ceux qui restent à faire, avec une barre de progression :
 
 ```bash
-python verifier.py        # les deux exercices
-python verifier.py 1      # exercice 1 seulement
-python verifier.py 2      # exercice 2 seulement
+python verifier.py        # les deux ateliers
+python verifier.py 1      # atelier 1 seulement
+python verifier.py 2      # atelier 2 seulement
 ```
 
 ```text
@@ -85,9 +130,9 @@ python verifier.py 2      # exercice 2 seulement
   Bravo! Tout est reussi (46/46).
 ```
 
-Lui aussi doit être lancé depuis le dossier `Exercices`.
+Lui aussi doit être lancé depuis le dossier `4 - Ateliers autocorrigés`.
 
-### 4. Lire le résultat et te corriger
+**4. Lire le résultat et te corriger**
 
 **Les messages d'erreur sont ton corrigé.** Chaque test raté explique la bonne réponse et te renvoie à la section de théorie concernée :
 
@@ -113,7 +158,7 @@ Ran 20 tests in 0.021s
 OK
 ```
 
-`OK` signifie que tout est réussi : 20 tests pour l'exercice 1, 26 pour l'exercice 2.
+`OK` signifie que tout est réussi : 20 tests pour l'atelier 1, 26 pour l'atelier 2.
 
 ## Notes
 

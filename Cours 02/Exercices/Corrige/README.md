@@ -24,17 +24,29 @@ L'étudiant se corrige donc seul, sans avoir accès à ce dossier.
 
 ## Contenu de ce dossier
 
+Ce dossier **reprend exactement l'arborescence** du dossier `Exercices` : chaque corrigé se trouve au même endroit que son énoncé, sous le même nom suffixé de ` - RÉPONSES`.
+
+|Dossier|Contenu|
+|---|---|
+|`1 - Facile/`|Corrigés de E2.1 à E2.3|
+|`2 - Moyen/`|Corrigés de E2.4 et E2.5|
+|`3 - Difficile/`|Corrigés de E2.6 et E2.7|
+|`4 - Ateliers autocorrigés/`|Solutions Python des deux ateliers|
+
+Dans `4 - Ateliers autocorrigés/` :
+
 |Fichier|Rôle|
 |---|---|
-|`exercice_1.py`|Solution complète et commentée de l'exercice 1|
-|`exercice_2.py`|Solution complète et commentée de l'exercice 2|
+|`exercice_1.py`|Solution complète et commentée de l'atelier 1|
+|`exercice_2.py`|Solution complète et commentée de l'atelier 2|
 |`exercice_2_debogage.py`|Version débogée, avec les 6 corrections annotées|
 |`test_exercice_1.py`, `test_exercice_2.py`|Copies des suites de tests, pour rendre ce dossier auto-vérifiable|
+|`verifier.py`|Lanceur coloré|
 
 ## Vérifier le corrigé
 
 ```bash
-cd "Cours 02/Exercices/Corrige"
+cd "Cours 02/Exercices/Corrige/4 - Ateliers autocorrigés"
 python -m unittest discover -p "test_*.py"
 ```
 
@@ -44,9 +56,9 @@ Cette vérification sert aussi de **test de non-régression** : si tu modifies u
 
 ## Barème suggéré
 
-|Exercice|Partie|Tests|Suggestion|
+|Atelier|Partie|Tests|Suggestion|
 |---|---|:---:|:---:|
-|1|A — Choix multiple|6|6 pts|
+|Atelier 1|A — Choix multiple|6|6 pts|
 |1|B — Constantes|3|6 pts|
 |1|C — Variables et calculs|7|14 pts|
 |1|D — Affichage|4|4 pts|

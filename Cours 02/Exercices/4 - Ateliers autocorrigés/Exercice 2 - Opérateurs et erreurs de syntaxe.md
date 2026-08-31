@@ -1,9 +1,9 @@
 # Exercice 2 — Opérateurs et erreurs de syntaxe
 
 > **Sections couvertes :**  
-    - [2.4 Opérateurs arithmétiques](../2.4%20-%20Opérateurs%20arithmétiques.md)  
-    - [2.5 Opérateurs d'affectation combinée](../2.5%20-%20Opérateurs%20d'assignation.md)  
-    - [2.6 Lire une erreur de syntaxe](../2.6%20-%20Lire%20une%20erreur%20de%20syntaxe.md)  
+    - [2.4 Opérateurs arithmétiques](../../2.4%20-%20Opérateurs%20arithmétiques.md)  
+    - [2.5 Opérateurs d'affectation combinée](../../2.5%20-%20Opérateurs%20d'assignation.md)  
+    - [2.6 Lire une erreur de syntaxe](../../2.6%20-%20Lire%20une%20erreur%20de%20syntaxe.md)  
 > **Durée :** 60 minutes  
 > **Fichiers à compléter :** `exercice_2.py` et `exercice_2_debogage.py`  
 > **Correction :** `python -m unittest test_exercice_2.py`
