@@ -20,6 +20,13 @@
 - [2.5 — Opérateurs d'assignation](./Cours%2002/2.5%20-%20Opérateurs%20d'assignation.md)
 - [2.6 — Lire une erreur de syntaxe](./Cours%2002/2.6%20-%20Lire%20une%20erreur%20de%20syntaxe.md)
 
+## Cours 03 — Entrées, sorties et opérateurs logiques
+
+- [3.1 — Entrées en console](./Cours%2003/3.1%20-%20Entrées%20en%20console.md)
+- [3.2 — Sorties en console](./Cours%2003/3.2%20-%20Sorties%20en%20console.md)
+- [3.3 — Sorties en console - formatage avancé](./Cours%2003/3.3%20-%20Sorties%20en%20console%20-%20formatage%20avancé.md)
+- [3.4 — Opérateurs relationnels et logiques](./Cours%2003/3.4%20-%20Opérateurs%20relationnels%20et%20logiques.md)
+
 ## Outils / Références
 
 - [Raccourcis VS Code](./Raccourcis_VSCode.md)
