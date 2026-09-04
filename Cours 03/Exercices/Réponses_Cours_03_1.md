@@ -49,8 +49,9 @@ Résultat:
 ![Exercice 3](../../images/cours03/exercice-03.png)
 
 ```python
+ANNEE_COURANTE = 2026
 age = int(input("Quel est ton âge ? "))
-print(f"Tu as {age} ans.")
+print(f"Tu as {age} ans. Tu es né(e) en {ANNEE_COURANTE - age}.")
 ```
 
 ### Exercice 4 — 🟡 Moyen
@@ -138,6 +139,8 @@ print("****")
 print("****")
 print("****")
 print("****")
+# ou encore
+print("****\n" * 4)
 ```
 
 ### Exercice 10 — 🟢 Facile
@@ -153,6 +156,7 @@ print(2)
 print(3)
 print(4)
 print(5)
+# vivement les boucles!!
 ```
 
 ### Exercice 11 — 🟡 Moyen
@@ -168,6 +172,7 @@ print("**")
 print("***")
 print("****")
 print("*****")
+# vivement les boucles!!
 ```
 
 ### Exercice 12 — 🔴 Avancé
@@ -178,6 +183,7 @@ Résultat:
 ![Exercice 12](../../images/cours03/exercice-12.png)
 
 ```python
+# Rappelez-vous que pour mettre une instruction sur plusieurs lignes, on utilise les ()
 table = (
     "5 x 1 = 5\n"
     "5 x 2 = 10\n"
@@ -226,7 +232,7 @@ Résultat:
 ![Exercice 15](../../images/cours03/exercice-15.png)
 
 ```python
-etoiles = "************************************************************"
+etoiles = "*" * 60
 
 print(etoiles)
 print(etoiles)

@@ -1,6 +1,6 @@
 # Exercices Python - Cours 03
 
-Les exercices sont regroupés selon les fiches du cours et se font dans l'ordre.
+Les exercices sont regroupés selon les fiches du cours et se font dans l'ordre. Il est recommandé de séparer chaque exercice dans des fichiers différents.
 
 **Légende des niveaux de difficulté :** 🟢 Facile · 🟡 Moyen · 🔴 Avancé · 🟣 Synthèse
 
@@ -32,7 +32,9 @@ Résultat:
 
 ### Exercice 3 — 🟢 Facile
 
-Demande l'âge de l'utilisateur et affiche `Tu as X ans.`.
+Demande l'âge de l'utilisateur et affiche `Tu as X ans. Tu es né(e) en AAAA`.
+
+*Remarque* : il est possible que l'année de naissance réelle diffère de 1 par rapport à votre affichage, si l'anniversaire de l'utilisateur n'est pas encore atteint dans l'année courante.
 
 Résultat:  
 ![Exercice 3](../../images/cours03/exercice-03.png)
@@ -56,8 +58,18 @@ Résultat:
 Demande une température en degrés Celsius et affiche sa conversion en degrés Fahrenheit.  
 *Indice : la formule de conversion est `F = C × 9/5 + 32`.*
 
+Exemples de valeurs
+
+|Celsius|Fahrenheit|
+|:---|---:|
+|`20`|`68.0`|
+|`30.5`|`86.9`|
+|`-40`|`-40.0`|
+
 Résultat:  
 ![Exercice 6](../../images/cours03/exercice-06.png)
+
+> *REMARQUE* : Pour taper le caractère `°`, maintenir la touche `ALT` (à gauche de la barre d'espacement) enfoncée, faire la combinaison `0176` sur le clavier numérique, puis relâcher `ALT`. Vous pouvez vous amuser à essayer d'autres combinaisons à 4 chiffres...
 
 ---
 
@@ -65,7 +77,7 @@ Résultat:
 
 ### Exercice 7 — 🟢 Facile
 
-Écris un programme qui affiche ton prénom et ton nom sur deux lignes **en un seul appel à `print()`** (indice : utilise `\n` à l'intérieur de la chaîne).
+Écris un programme qui affiche ton prénom et ton nom sur deux lignes **en un seul appel à `print()`** (indice : le caractère `\n` permet d'afficher un retour de ligne). **BONUS** : trouve une deuxième façon équivalente de le faire.
 
 Résultat:  
 ![Exercice 7](../../images/cours03/exercice-07.png)
