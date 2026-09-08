@@ -45,7 +45,7 @@ else:
     print("Mot de passe trop court")
 ```
 
-*Remarque : `len()` fonctionne directement sur une chaîne de caractères, comme vu à la fiche [4.3 - Manipulations de chaînes](../../4.3-ManipulationsCha%C3%AEnes.md).*
+*Remarque : `len()` fonctionne directement sur une chaîne de caractères, comme vu à la fiche [Manipulations de chaînes](../../Outils/Manipulations%20de%20cha%C3%AEnes.md).*
 
 ## 🟡 Exercice 4 : Moyen
 

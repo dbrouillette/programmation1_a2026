@@ -27,9 +27,18 @@
 - [3.3 — Sorties en console - formatage avancé](./Cours%2003/3.3%20-%20Sorties%20en%20console%20-%20formatage%20avancé.md)
 - [3.4 — Opérateurs relationnels et logiques](./Cours%2003/3.4%20-%20Opérateurs%20relationnels%20et%20logiques.md)
 
+## Cours 04 — Structures conditionnelles
+
+- [4.1 — La structure si-sinon](./Cours%2004/4.1%20-%20La%20structure%20si-sinon.md)
+- [4.2 — Les conditions enchaînées](./Cours%2004/4.2%20-%20Les%20conditions%20enchaînées.md)
+- [4.3 — Les conditions imbriquées](./Cours%2004/4.3%20-%20Les%20conditions%20imbriquées.md)
+- [4.4 — L'opérateur ternaire](./Cours%2004/4.4%20-%20L'opérateur%20ternaire.md)
+- [4.5 — Erreurs et bonnes pratiques](./Cours%2004/4.5%20-%20Erreurs%20et%20bonnes%20pratiques.md)
+
 ## Outils / Références
 
-- [Raccourcis VS Code](./Raccourcis_VSCode.md)
+- [Raccourcis VS Code](./Outils/Raccourcis%20VS%20Code.md)
+- [Manipulations de chaînes](./Outils/Manipulations%20de%20chaînes.md)
 
 ---
 
