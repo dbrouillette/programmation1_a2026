@@ -37,8 +37,11 @@
 
 ## Outils / Références
 
-- [Raccourcis VS Code](./Outils/Raccourcis%20VS%20Code.md)
+- [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
+- [Date et heure - Module datetime](./Outils/Date%20et%20heure%20-%20Module%20datetime.md)
 - [Manipulations de chaînes](./Outils/Manipulations%20de%20chaînes.md)
+- [Module math](./Outils/Module%20math.md)
+- [Raccourcis VS Code](./Outils/Raccourcis%20VS%20Code.md)
 
 ---
 
