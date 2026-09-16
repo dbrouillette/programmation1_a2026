@@ -31,13 +31,6 @@ Exercices :
 - [3.3 — Sorties en console - formatage avancé](./Cours%2003/3.3%20-%20Sorties%20en%20console%20-%20formatage%20avancé.md)
 - [3.4 — Opérateurs relationnels et logiques](./Cours%2003/3.4%20-%20Opérateurs%20relationnels%20et%20logiques.md)
 
-<<<<<<< Updated upstream
-=======
-Exercices :
-
-- [Exercices du Cours 03](./Cours%2003/Exercices/Exercices_Cours_03_1.md) ([réponses](./Cours%2003/Exercices/Réponses_Cours_03_1.md))
-
->>>>>>> Stashed changes
 ## Cours 04 — Structures conditionnelles
 
 - [4.1 — La structure si-sinon](./Cours%2004/4.1%20-%20La%20structure%20si-sinon.md)
@@ -46,7 +39,6 @@ Exercices :
 - [4.4 — L'opérateur ternaire](./Cours%2004/4.4%20-%20L'opérateur%20ternaire.md)
 - [4.5 — Erreurs et bonnes pratiques](./Cours%2004/4.5%20-%20Erreurs%20et%20bonnes%20pratiques.md)
 
-<<<<<<< Updated upstream
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
@@ -54,31 +46,6 @@ Exercices :
 - [Manipulations de chaînes](./Outils/Manipulations%20de%20chaînes.md)
 - [Module math](./Outils/Module%20math.md)
 - [Raccourcis VS Code](./Outils/Raccourcis%20VS%20Code.md)
-=======
-Exercices :
-
-- [Exercices 4.1 — La structure si-sinon](./Cours%2004/Exercices/Exercices%204.1%20-%20La%20structure%20si-sinon.md) ([solutions](./Cours%2004/Exercices/Solutions%204.1%20-%20La%20structure%20si-sinon.md))
-- [Exercices 4.2 — Les conditions enchaînées](./Cours%2004/Exercices/Exercices%204.2%20-%20Les%20conditions%20enchaînées.md) ([solutions](./Cours%2004/Exercices/Solutions%204.2%20-%20Les%20conditions%20enchaînées.md))
-- [Exercices 4.3 — Les conditions imbriquées](./Cours%2004/Exercices/Exercices%204.3%20-%20Les%20conditions%20imbriquées.md) ([solutions](./Cours%2004/Exercices/Solutions%204.3%20-%20Les%20conditions%20imbriquées.md))
-- [Exercices 4.4 — L'opérateur ternaire](./Cours%2004/Exercices/Exercices%204.4%20-%20L'opérateur%20ternaire.md) ([solutions](./Cours%2004/Exercices/Solutions%204.4%20-%20L'opérateur%20ternaire.md))
-- [Exercices 4.5 — Erreurs et bonnes pratiques](./Cours%2004/Exercices/Exercices%204.5%20-%20Erreurs%20et%20bonnes%20pratiques.md) ([solutions](./Cours%2004/Exercices/Solutions%204.5%20-%20Erreurs%20et%20bonnes%20pratiques.md))
-- [Exercices de synthèse — Structures conditionnelles](./Cours%2004/Exercices/Exercices%20Cours%2004%20-%20Structures%20conditionnelles.md)
-
-## Cours 05 — Boucle `while`
-
-- [5.1 — La boucle while](./Cours%2005/5.1%20-%20La%20boucle%20while.md)
-
-Exercices :
-
-- [Exercices 5.1 — La boucle while](./Cours%2005/Exercices/Exercices%205.1%20-%20La%20boucle%20while.md) ([solutions](./Cours%2005/Exercices/Solutions%205.1%20-%20La%20boucle%20while.md))
-
-## Outils / Références
-
-- [Raccourcis VS Code](./Raccourcis_VSCode.md)
-- [Le module `math`](./Outils/ClasseMath.md)
-- [Dates et heures](./Outils/DatesHeures.md)
-- [Couleurs dans la console avec `colorama`](./Outils/CouleursColorama.md)
->>>>>>> Stashed changes
 
 ---
 
