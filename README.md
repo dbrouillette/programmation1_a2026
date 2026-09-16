@@ -39,6 +39,10 @@ Exercices :
 - [4.4 — L'opérateur ternaire](./Cours%2004/4.4%20-%20L'opérateur%20ternaire.md)
 - [4.5 — Erreurs et bonnes pratiques](./Cours%2004/4.5%20-%20Erreurs%20et%20bonnes%20pratiques.md)
 
+## Cours 05 — Structures itératives `while` et validation de données
+
+- [5.1 — La boucle while](./Cours%2005/5.1%20-%20La%20boucle%20while.md)
+
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
