@@ -147,6 +147,55 @@ print(f"Environ {mois_approximatifs:.2f} mois")
 
 Pour un âge ou une durée exprimée en années et en mois civils exacts, il faut comparer les composantes de la date (`year`, `month`, `day`) plutôt que convertir une durée en secondes.
 
+### Le module `calendar`
+
+Le module `datetime` sert à créer et à manipuler une date précise. Par exemple, `datetime.date(2026, 1, 31)` représente le 31 janvier 2026. Le module `calendar`, lui, fournit des informations sur le calendrier, comme le nombre de jours dans un mois.
+
+On peut donc utiliser `datetime` pour la date et `calendar` pour vérifier les règles du mois. La fonction `calendar.monthrange()` renvoie le jour de la semaine du premier jour et le nombre de jours du mois.
+
+### Ajouter un mois sans gérer sa longueur
+
+Pour ajouter des jours, utilisez `timedelta`. Python s'occupe alors automatiquement des changements de mois et d'année. Pour ajouter un mois, utilisez `calendar.monthrange()` afin d'obtenir le dernier jour réel du mois, sans mémoriser si le mois contient 28, 29, 30 ou 31 jours.
+
+```python
+import calendar
+import datetime
+
+
+def ajouter_un_mois(date_depart):
+	if date_depart.month == 12:
+		nouvelle_annee = date_depart.year + 1
+		nouveau_mois = 1
+	else:
+		nouvelle_annee = date_depart.year
+		nouveau_mois = date_depart.month + 1
+
+	dernier_jour = calendar.monthrange(nouvelle_annee, nouveau_mois)[1]
+	nouveau_jour = min(date_depart.day, dernier_jour)
+
+	return date_depart.replace(
+		year=nouvelle_annee,
+		month=nouveau_mois,
+		day=nouveau_jour,
+	)
+
+
+date_depart = datetime.date(2026, 1, 31)
+date_apres_un_mois = ajouter_un_mois(date_depart)
+date_apres_30_jours = date_depart + datetime.timedelta(days=30)
+
+print("Après un mois :", date_apres_un_mois)  # 2026-02-28
+print("Après 30 jours :", date_apres_30_jours)  # 2026-03-02
+
+date_limite = ajouter_un_mois(datetime.date.today())
+if datetime.date.today() >= date_limite:
+	print("La date limite est atteinte.")
+else:
+	print("La date limite n'est pas encore atteinte.")
+```
+
+Un **mois civil** et un nombre fixe de jours ne représentent pas la même durée. Utilisez `ajouter_mois()` pour une échéance mensuelle, comme une facture ou un abonnement, et `timedelta(days=...)` pour une durée exacte en jours. Cette approche est comparable à la fonction `MOIS.DECALER()` d'Excel.
+
 ### Valider une date saisie
 
 La méthode `strptime()` déclenche une erreur `ValueError` si la chaîne ne respecte pas le format attendu ou si la date n'existe pas. Un bloc `try/except` permet d'intercepter cette erreur et de redemander une saisie valide.
