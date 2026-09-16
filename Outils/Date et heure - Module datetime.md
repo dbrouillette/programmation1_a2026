@@ -42,7 +42,52 @@ print(maintenant.minute)
 print(maintenant.second)
 ```
 
-## 4. Formater une date ou une heure
+## 4. Que contient une valeur `datetime` ?
+
+Une valeur `datetime` contient plusieurs composantes qui décrivent un moment précis :
+
+- `year` : l'année
+- `month` : le mois, de 1 à 12
+- `day` : le jour du mois
+- `hour` : l'heure, de 0 à 23
+- `minute` : les minutes, de 0 à 59
+- `second` : les secondes, de 0 à 59
+- `microsecond` : une fraction de seconde, lorsque nécessaire
+
+```python
+print(maintenant.year)
+print(maintenant.month)
+print(maintenant.day)
+print(maintenant.hour)
+print(maintenant.minute)
+print(maintenant.second)
+print(maintenant.microsecond)
+```
+
+### Comparaison avec Excel
+
+Excel représente généralement une date par un nombre :
+
+- la partie entière représente le nombre de jours écoulés depuis une date de référence;
+- la partie décimale représente la fraction de la journée correspondant à l'heure.
+
+Par exemple, `45000,5` représente un jour dont l'heure est environ 12 h, puisque `0,5` correspond à la moitié d'une journée. Excel affiche ensuite ce nombre sous forme de date ou d'heure selon le format de cellule choisi.
+
+Dans Excel :
+
+- `=AUJOURDHUI()` renvoie la date du jour, sans l'heure;
+- `=MAINTENANT()` renvoie la date du jour avec l'heure actuelle.
+
+Le rôle de ces fonctions est comparable à celui de Python :
+
+```python
+date_du_jour = datetime.date.today()       # comparable à =AUJOURDHUI()
+maintenant = datetime.datetime.now()       # comparable à =MAINTENANT()
+```
+
+La différence est qu'Excel stocke directement la date comme un nombre séquentiel, alors que Python utilise un objet `date` ou `datetime` avec des composantes accessibles. Dans les deux cas, le format d'affichage ne change pas la valeur réelle.
+
+## 5. Formater une date ou une heure
 
 Par défaut, un objet `date` ou `datetime` s'affiche dans un format fixe qui n'est pas toujours celui souhaité. La méthode `strftime()` (« string format time ») convertit un objet date/heure en chaîne de caractères, selon un gabarit composé de codes de format.
 
@@ -69,7 +114,90 @@ Voici les principaux codes de format les plus couramment utilisés :
 
 > Consulter la [**liste complète** des codes de format](https://docs.python.org/fr/3.14/library/datetime.html#strftime-and-strptime-format-codes) de date Python pour plus de détails.
 
-## 5. Exemple complet
+## 6. Calculer la différence entre deux dates
+
+La soustraction de deux objets `datetime` produit un objet `timedelta`. Cet objet permet notamment d'obtenir le nombre total de jours, de secondes, de minutes ou d'heures entre deux moments.
+
+```python
+import datetime
+
+debut = datetime.datetime(2026, 9, 15, 8, 30, 0)
+fin = datetime.datetime(2026, 9, 16, 10, 45, 20)
+
+difference = fin - debut
+secondes_totales = int(difference.total_seconds())
+minutes_totales = secondes_totales // 60
+secondes_restantes = secondes_totales % 60
+
+print("Différence en jours :", difference.days)
+print("Différence en minutes :", minutes_totales)
+print("Différence en secondes :", secondes_totales)
+print(f"Durée : {difference.days} jour(s), {minutes_totales % 60} minute(s) et {secondes_restantes} seconde(s)")
+```
+
+Les minutes et les secondes sont exactes. En revanche, un mois peut avoir 28, 29, 30 ou 31 jours et une année peut avoir 365 ou 366 jours. Une conversion en mois ou en années est donc une **approximation** lorsqu'on utilise une durée :
+
+```python
+annees_approximatives = secondes_totales / (365.25 * 24 * 60 * 60)
+mois_approximatifs = secondes_totales / (30.44 * 24 * 60 * 60)
+
+print(f"Environ {annees_approximatives:.2f} année(s)")
+print(f"Environ {mois_approximatifs:.2f} mois")
+```
+
+Pour un âge ou une durée exprimée en années et en mois civils exacts, il faut comparer les composantes de la date (`year`, `month`, `day`) plutôt que convertir une durée en secondes.
+
+### Valider une date saisie
+
+La méthode `strptime()` déclenche une erreur `ValueError` si la chaîne ne respecte pas le format attendu ou si la date n'existe pas. Un bloc `try/except` permet d'intercepter cette erreur et de redemander une saisie valide.
+
+```python
+import datetime
+
+date_valide = False
+
+while not date_valide:
+	date_texte = input("Entrez une date (JJ/MM/AAAA) : ")
+
+	try:
+		date_choisie = datetime.datetime.strptime(date_texte, "%d/%m/%Y")
+		date_valide = True
+	except ValueError:
+		print("Erreur : utilisez une date réelle au format JJ/MM/AAAA.")
+
+print("Date acceptée :", date_choisie.strftime("%d/%m/%Y"))
+```
+
+## 7. Déclencher un compteur à une date donnée
+
+Une date entrée par l'utilisateur est une chaîne de caractères. La méthode `strptime()` permet de la convertir en objet `datetime`. On peut ensuite utiliser une boucle `while` qui attend jusqu'à la date prévue. Dans cet exemple, le programme affiche le nombre de secondes restantes et déclenche une action à l'arrivée.
+
+```python
+import datetime
+import time
+
+date_cible = None
+
+while date_cible is None:
+	date_texte = input("Date de déclenchement (JJ/MM/AAAA HH:MM:SS) : ")
+
+	try:
+		date_cible = datetime.datetime.strptime(date_texte, "%d/%m/%Y %H:%M:%S")
+	except ValueError:
+		print("Erreur : utilisez une date réelle au format JJ/MM/AAAA HH:MM:SS.")
+
+while datetime.datetime.now() < date_cible:
+	maintenant = datetime.datetime.now()
+	secondes_restantes = int((date_cible - maintenant).total_seconds())
+	print(f"Il reste {secondes_restantes} seconde(s).")
+	time.sleep(1)
+
+print("La date cible est atteinte !")
+```
+
+Pour tester rapidement le programme, entrez une date située une ou deux minutes dans le futur. La date doit respecter exactement le format `JJ/MM/AAAA HH:MM:SS`.
+
+## 8. Exemple complet
 
 ```python
 import datetime
@@ -78,13 +206,16 @@ maintenant = datetime.datetime.now()
 print(f"Il est {maintenant.strftime('%H:%M')} le {maintenant.strftime('%d/%m/%Y')}")
 ```
 
-## 6. Résumé
+## 9. Résumé
 
 - `datetime.date.today()` donne la date seule.
 - `datetime.datetime.now()` donne date et heure.
 - `strftime()` permet de personnaliser l'affichage.
+- `strptime()` convertit une chaîne en objet `datetime`.
+- La soustraction de deux objets `datetime` produit un `timedelta`.
+- Une boucle `while` peut attendre l'arrivée d'une date cible.
 
-## 7. Exercices d'application
+## 10. Exercices d'application
 
 ### Exercice 1 — Date du jour
 
