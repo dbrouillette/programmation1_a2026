@@ -24,9 +24,26 @@ while note < 0 or note > 100:
 print("Note valide :", note)
 ```
 
-## 🟢 Exercice 3 : Facile-Moyen
+## 🟢 Exercice 3 : Facile
 
 ### ✅ Solution 3
+
+```python
+a.  while continuer:
+b.  while not trouve:
+c.  while not partie_terminee:
+d.  continuer = (reponse == "o")
+```
+
+**Pourquoi** : une variable booléenne **est** déjà la condition. La comparer à `True` ou à `False` n'ajoute aucune information et allonge la lecture.
+
+- En **a**, `continuer == True` vaut exactement ce que vaut `continuer`.
+- En **b** et en **c**, `not` exprime la négation plus clairement que `== False` ou `!= True`.
+- En **d**, le ternaire est inutile : `reponse == "o"` produit **déjà** `True` ou `False`. On range directement ce résultat dans la variable. Les parenthèses ne sont pas obligatoires, mais elles aident à voir qu'on affecte le résultat d'une comparaison.
+
+## 🟢 Exercice 4 : Facile-Moyen
+
+### ✅ Solution 4
 
 ```python
 table = int(input("Entrez un nombre entre 1 et 12 : "))
@@ -40,9 +57,9 @@ while multiplicateur <= 12:
     multiplicateur += 1
 ```
 
-## 🟢 Exercice 4 : Facile-Moyen
+## 🟢 Exercice 5 : Facile-Moyen
 
-### ✅ Solution 4
+### ✅ Solution 5
 
 ```python
 while True:
@@ -53,9 +70,28 @@ while True:
 print("Accès autorisé !")
 ```
 
-## 🟡 Exercice 5 : Moyen
+## 🟢 Exercice 6 : Facile-Moyen
 
-### ✅ Solution 5
+### ✅ Solution 6
+
+```python
+continuer = True
+
+while continuer:
+    nombre = float(input("Entrez un nombre : "))
+    print("Son carré est", nombre ** 2)
+
+    reponse = input("Un autre ? (o/n) ").strip().lower()
+    continuer = (reponse == "o")
+
+print("Au revoir !")
+```
+
+> Toute réponse autre que `o` met `continuer` à `False` et termine la boucle. Si on voulait redemander en cas de réponse invalide, il faudrait valider `reponse` dans une boucle imbriquée avant l'affectation.
+
+## 🟡 Exercice 7 : Moyen
+
+### ✅ Solution 7
 
 ```python
 total = 0
@@ -72,9 +108,9 @@ else:
     print("Aucune note entrée.")
 ```
 
-## 🟡 Exercice 6 : Moyen
+## 🟡 Exercice 8 : Moyen
 
-### ✅ Solution 6
+### ✅ Solution 8
 
 ```python
 compteur = 0
@@ -95,9 +131,9 @@ print("Somme des nombres positifs :", somme)
 
 > La variable de contrôle `compteur` est mise à jour **avant** le `continue` : autrement, la boucle ne se terminerait jamais dès qu'un nombre négatif serait entré.
 
-## 🟡 Exercice 7 : Moyen
+## 🟡 Exercice 9 : Moyen
 
-### ✅ Solution 7
+### ✅ Solution 9
 
 ```python
 choix = ""
@@ -114,9 +150,31 @@ while choix != "2":
         print("Choix invalide.")
 ```
 
-## 🟡 Exercice 8 : Moyen
+## 🟡 Exercice 10 : Moyen
 
-### ✅ Solution 8
+### ✅ Solution 10
+
+```python
+VOYELLES = "aeiouy"
+
+voyelle_trouvee = False
+nombre_de_caracteres = 0
+
+while not voyelle_trouvee:
+    caractere = input("Entrez un caractère : ").strip().lower()
+    nombre_de_caracteres += 1
+
+    if caractere in VOYELLES:
+        voyelle_trouvee = True
+
+print("Voyelle trouvée après", nombre_de_caracteres, "caractère(s).")
+```
+
+> `caractere in VOYELLES` produit déjà un booléen : on pourrait donc écrire directement `voyelle_trouvee = caractere in VOYELLES`. Attention cependant — cette version-là **remettrait le drapeau à `False`** à chaque consonne, ce qui est correct ici parce que la boucle s'arrête dès la première voyelle, mais deviendrait un bogue si on voulait retenir qu'une voyelle est déjà passée. Le `if` est plus sûr : un drapeau qu'on lève ne se rabaisse pas tout seul.
+
+## 🟡 Exercice 11 : Moyen
+
+### ✅ Solution 11
 
 ```python
 nombre = int(input("Entrez un nombre (0 pour arrêter) : "))
@@ -140,21 +198,22 @@ else:
 
 > On initialise `plus_grand` et `plus_petit` avec le **premier** nombre entré, et non avec `0` : sinon, une série de nombres tous négatifs donnerait un maximum erroné de `0`.
 
-## 🟡 Exercice 9 : Moyen
+## 🟡 Exercice 12 : Moyen
 
-### ✅ Solution 9
+### ✅ Solution 12
 
 ```python
 essais_restants = 3
 acces_autorise = False
 
-while essais_restants > 0:
+while essais_restants > 0 and not acces_autorise:
     mot_de_passe = input("Entrez le mot de passe : ").strip()
+
     if mot_de_passe == "python123":
         acces_autorise = True
-        break
-    essais_restants -= 1
-    print("Accès refusé. Essais restants :", essais_restants)
+    else:
+        essais_restants -= 1
+        print("Accès refusé. Essais restants :", essais_restants)
 
 if acces_autorise:
     print("Accès autorisé !")
@@ -162,9 +221,11 @@ else:
     print("Compte bloqué.")
 ```
 
-## 🟡 Exercice 10 : Moyen-Difficile
+> Comparez avec la solution 5 : le `break` sort de la boucle, mais ne laisse aucune trace de la raison de la sortie. Le drapeau, lui, survit à la boucle et sert encore dans le `if` final.
 
-### ✅ Solution 10
+## 🟡 Exercice 13 : Moyen-Difficile
+
+### ✅ Solution 13
 
 ```python
 nombre_secret = 42
@@ -178,9 +239,9 @@ while essai != nombre_secret:
 print("Bravo, vous avez trouvé !")
 ```
 
-## 🔴 Exercice 11 : Moyen-Difficile
+## 🔴 Exercice 14 : Moyen-Difficile
 
-### ✅ Solution 11
+### ✅ Solution 14
 
 ```python
 nombre = int(input("Entrez un entier positif : "))
@@ -196,19 +257,19 @@ while nombre > 0:
 print("Somme des chiffres :", somme)
 ```
 
-## 🔴 Exercice 12 : Difficile
+## 🔴 Exercice 15 : Difficile
 
-### ✅ Solution 12
+### ✅ Solution 15
 
 ```python
-rejouer = "oui"
+rejouer = True
 
-while rejouer == "oui":
+while rejouer:
     nombre_secret = 42
     nombre_essais = 0
-    essai = -1
+    trouve = False
 
-    while essai != nombre_secret:
+    while not trouve:
         essai = int(input("Devinez le nombre : "))
         nombre_essais += 1
 
@@ -216,11 +277,15 @@ while rejouer == "oui":
             print("Trop petit.")
         elif essai > nombre_secret:
             print("Trop grand.")
+        else:
+            trouve = True
 
     print("Trouvé en", nombre_essais, "essais.")
-    rejouer = input("Voulez-vous rejouer ? (oui/non) ").strip().lower()
+
+    reponse = input("Voulez-vous rejouer ? (o/n) ").strip().lower()
+    rejouer = (reponse == "o")
 
 print("Merci d'avoir joué !")
 ```
 
-> `essai` est initialisé à `-1` (une valeur impossible à deviner) pour que la boucle interne démarre à coup sûr, même si le joueur devine le bon nombre du premier coup à la partie précédente.
+> Le drapeau `trouve` règle au passage le problème d'amorçage : avec une condition comme `while essai != nombre_secret:`, il faudrait donner à `essai` une valeur bidon avant d'entrer dans la boucle. Ici, `trouve = False` dit exactement ce qu'on veut dire — on n'a encore rien trouvé.
