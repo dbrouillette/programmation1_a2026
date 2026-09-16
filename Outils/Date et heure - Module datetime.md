@@ -161,33 +161,22 @@ Pour ajouter des jours, utilisez `timedelta`. Python s'occupe alors automatiquem
 import calendar
 import datetime
 
-
-def ajouter_un_mois(date_depart):
-	if date_depart.month == 12:
-		nouvelle_annee = date_depart.year + 1
-		nouveau_mois = 1
-	else:
-		nouvelle_annee = date_depart.year
-		nouveau_mois = date_depart.month + 1
-
-	dernier_jour = calendar.monthrange(nouvelle_annee, nouveau_mois)[1]
-	nouveau_jour = min(date_depart.day, dernier_jour)
-
-	return date_depart.replace(
-		year=nouvelle_annee,
-		month=nouveau_mois,
-		day=nouveau_jour,
-	)
-
-
 date_depart = datetime.date(2026, 1, 31)
-date_apres_un_mois = ajouter_un_mois(date_depart)
+nouvelle_annee = date_depart.year
+nouveau_mois = date_depart.month + 1
+dernier_jour = calendar.monthrange(nouvelle_annee, nouveau_mois)[1]
+nouveau_jour = min(date_depart.day, dernier_jour)
+date_apres_un_mois = date_depart.replace(
+	year=nouvelle_annee,
+	month=nouveau_mois,
+	day=nouveau_jour,
+)
 date_apres_30_jours = date_depart + datetime.timedelta(days=30)
 
 print("Après un mois :", date_apres_un_mois)  # 2026-02-28
 print("Après 30 jours :", date_apres_30_jours)  # 2026-03-02
 
-date_limite = ajouter_un_mois(datetime.date.today())
+date_limite = datetime.date.today() + datetime.timedelta(days=30)
 if datetime.date.today() >= date_limite:
 	print("La date limite est atteinte.")
 else:
@@ -282,6 +271,26 @@ Demandez à l'utilisateur son année de naissance, puis calculez et affichez son
 
 Demandez à l'utilisateur une année, un mois et un jour (trois nombres entiers séparés). Créez un objet `date` à partir de ces valeurs avec `datetime.date(annee, mois, jour)`, puis affichez-le sous la forme `JJ/MM/AAAA`.
 
+### Exercice 5 — Composantes d'une date
+
+Créez une variable `maintenant` avec `datetime.datetime.now()`. Affichez séparément son année, son mois, son jour, son heure, ses minutes et ses secondes.
+
+### Exercice 6 — Valider une date entrée au clavier
+
+Demandez une date au format `JJ/MM/AAAA`. Utilisez `try/except` et `strptime()` pour redemander la date tant que la saisie n'est pas valide. Affichez ensuite la date acceptée.
+
+### Exercice 7 — Différence entre deux dates
+
+Demandez deux dates et heures au format `JJ/MM/AAAA HH:MM:SS`. Calculez la différence entre ces deux moments et affichez-la en jours, en minutes et en secondes.
+
+### Exercice 8 — Ajouter un mois à une date
+
+Créez une date correspondant au 31 janvier 2026. Utilisez `calendar.monthrange()` pour trouver le nombre de jours du mois suivant, puis affichez le dernier jour de ce mois. Le résultat attendu est le 28 février 2026.
+
+### Exercice 9 — Compteur jusqu'à une date cible
+
+Demandez une date cible au format `JJ/MM/AAAA HH:MM:SS`. Validez la saisie, puis utilisez une boucle `while` et `time.sleep(1)` pour afficher le nombre de secondes restantes jusqu'à l'atteinte de la date cible.
+
 ## 🎥 Vidéo explicative
 
 [![Regarder](https://img.youtube.com/vi/GzhG26cvmNg/maxresdefault.jpg)](https://youtu.be/GzhG26cvmNg)
@@ -330,4 +339,93 @@ jour = int(input("Jour : "))
 
 date_choisie = datetime.date(annee, mois, jour)
 print(date_choisie.strftime("%d/%m/%Y"))
+```
+
+### Solution 5 — Composantes d'une date
+
+```python
+import datetime
+
+maintenant = datetime.datetime.now()
+print("Année :", maintenant.year)
+print("Mois :", maintenant.month)
+print("Jour :", maintenant.day)
+print("Heure :", maintenant.hour)
+print("Minutes :", maintenant.minute)
+print("Secondes :", maintenant.second)
+```
+
+### Solution 6 — Valider une date entrée au clavier
+
+```python
+import datetime
+
+date_choisie = None
+
+while date_choisie is None:
+	date_texte = input("Date (JJ/MM/AAAA) : ")
+
+	try:
+		date_choisie = datetime.datetime.strptime(date_texte, "%d/%m/%Y")
+	except ValueError:
+		print("Date invalide. Recommencez.")
+
+print("Date acceptée :", date_choisie.strftime("%d/%m/%Y"))
+```
+
+### Solution 7 — Différence entre deux dates
+
+```python
+import datetime
+
+debut_texte = input("Début (JJ/MM/AAAA HH:MM:SS) : ")
+fin_texte = input("Fin (JJ/MM/AAAA HH:MM:SS) : ")
+
+debut = datetime.datetime.strptime(debut_texte, "%d/%m/%Y %H:%M:%S")
+fin = datetime.datetime.strptime(fin_texte, "%d/%m/%Y %H:%M:%S")
+difference = fin - debut
+
+print("Différence en jours :", difference.days)
+print("Différence en minutes :", difference.total_seconds() / 60)
+print("Différence en secondes :", difference.total_seconds())
+```
+
+### Solution 8 — Ajouter un mois à une date
+
+```python
+import calendar
+import datetime
+
+date_depart = datetime.date(2026, 1, 31)
+mois_suivant = date_depart.month + 1
+nombre_de_jours = calendar.monthrange(date_depart.year, mois_suivant)[1]
+date_fin_du_mois = datetime.date(date_depart.year, mois_suivant, nombre_de_jours)
+
+print("Dernier jour du mois suivant :", date_fin_du_mois)
+```
+
+### Solution 9 — Compteur jusqu'à une date cible
+
+```python
+import datetime
+import time
+
+date_cible = None
+
+while date_cible is None:
+	date_texte = input("Date cible (JJ/MM/AAAA HH:MM:SS) : ")
+
+	try:
+		date_cible = datetime.datetime.strptime(date_texte, "%d/%m/%Y %H:%M:%S")
+	except ValueError:
+		print("Date invalide. Recommencez.")
+
+while datetime.datetime.now() < date_cible:
+	secondes_restantes = int(
+		(date_cible - datetime.datetime.now()).total_seconds()
+	)
+	print("Il reste", secondes_restantes, "seconde(s).")
+	time.sleep(1)
+
+print("La date cible est atteinte !")
 ```
