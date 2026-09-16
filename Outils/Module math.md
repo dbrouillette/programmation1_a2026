@@ -10,7 +10,7 @@
 
 Le module `math` fait partie de la bibliothèque standard de Python. Il fournit un accès aux fonctions mathématiques définies par le standard C, comme les racines carrées, les fonctions trigonométriques, les logarithmes et plusieurs constantes utiles (`pi`, `e`, etc.).
 
-> **Documentation officielle** : Pour la liste complète des fonctions et constantes disponibles, voir la documentation officielle : [docs.python.org/3/library/math.html](https://docs.python.org/3/library/math.html).
+> **Documentation officielle** : Pour la liste complète des fonctions et constantes disponibles, voir la documentation officielle : [docs.python.org/3/library/math.html](https://docs.python.org/fr/3.14/library/math.html).
 
 ## 1. Importer le module `math`
 

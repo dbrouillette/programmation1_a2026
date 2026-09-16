@@ -10,7 +10,7 @@
 
 Le module `datetime` fait partie de la bibliothèque standard de Python. Il fournit des classes pour manipuler des dates (`date`), des heures (`time`) et des combinaisons des deux (`datetime`), ainsi que pour faire des calculs sur des durées (`timedelta`).
 
-> **Documentation officielle** : Pour la liste complète des classes et méthodes disponibles, voir la documentation officielle : [docs.python.org/3/library/datetime.html](https://docs.python.org/3/library/datetime.html).
+> **Documentation officielle** : Pour la liste complète des classes et méthodes disponibles, voir la documentation officielle : [docs.python.org/3/library/datetime.html](https://docs.python.org/fr/3.14/library/datetime.html).
 
 ## 1. Importer `datetime`
 
