@@ -50,6 +50,8 @@ Exercices :
 ## Cours 05 — Structures itératives `while` et validation de données
 
 - [5.1 — La boucle while](./Cours%2005/5.1%20-%20La%20boucle%20while.md)
+- [5.2 — La gestion des erreurs](./Cours%2005/5.2%20-%20La%20gestion%20des%20erreurs.md)
+- [5.3 — La validation de données](./Cours%2005/5.3%20-%20La%20validation%20de%20données.md)
 
 ## Outils / Références
 
