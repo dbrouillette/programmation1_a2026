@@ -1,4 +1,4 @@
-# Couleurs dans la console avec le module `colorama`
+# Couleurs dans la console avec le module `colorama`!
 
 ## Objectifs
 
