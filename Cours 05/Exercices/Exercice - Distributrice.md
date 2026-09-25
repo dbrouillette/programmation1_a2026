@@ -168,31 +168,7 @@ Si `a_rendre` vaut `0`, affichez plutôt `Aucune monnaie à rendre. Merci d'avoi
 
 ---
 
-## Partie 5 — Le rapport des ventes (choix 2) et la sortie (choix 0)
-
-Affichez un rapport aligné (largeur 50, avec les alignements `<` et `>` des f-strings) :
-
-- le nombre de cafés vendus ;
-- les **ventes avant taxes** : `nb_cafes * PRIX_AVANT_TAXES` ;
-- les **ventes taxes incluses** : `nb_cafes * PRIX_CAFE` ;
-- les **taxes perçues** : la différence entre les deux
-  *(l'arrondi au 5 cents est ainsi inclus dans les taxes)* ;
-- le **fonds de caisse du matin** et l'**argent en caisse maintenant** ;
-- la monnaie totale rendue aux clients ;
-- les gobelets restants.
-
-> ⚠️ **Piège à éviter** : ne calculez pas les taxes à partir de `caisse`! La caisse
-> contient aussi le fonds de départ, qui n'a jamais été taxé. Partez toujours de
-> `nb_cafes`.
-
-Le choix `0` affiche ce même rapport une dernière fois, puis un message d'au revoir.
-
-> 💡 Pour éviter d'écrire le rapport en double, placez-le dans un seul bloc
-> `if choix == 2 or choix == 0:` à la fin de la boucle.
-
----
-
-## Exemple d'exécution (extrait)
+## Exemple d'exécution (option 1)
 
 ```text
 Votre choix : abc
@@ -216,6 +192,56 @@ Insérez une pièce : 3
 Voici votre café. Il reste 4 gobelet(s).
 Monnaie rendue : 0.10 $
   0 x 2.00 $   0 x 1.00 $   0 x 0.25 $   1 x 0.10 $   0 x 0.05 $
+```
+
+## Partie 5 — Le rapport des ventes (choix 2) et la sortie (choix 0)
+
+Affichez un rapport aligné (largeur 50, avec les alignements `<` et `>` des f-strings) :
+
+- le nombre de cafés vendus ;
+- les **ventes avant taxes** : `nb_cafes * PRIX_AVANT_TAXES` ;
+- les **ventes taxes incluses** : `nb_cafes * PRIX_CAFE` ;
+- les **taxes perçues** : la différence entre les deux
+  *(l'arrondi au 5 cents est ainsi inclus dans les taxes)* ;
+- le **fonds de caisse du matin** et l'**argent en caisse maintenant** ;
+- la monnaie totale rendue aux clients ;
+- les gobelets restants.
+
+> ⚠️ **Piège à éviter** : ne calculez pas les taxes à partir de `caisse`! La caisse
+> contient aussi le fonds de départ, qui n'a jamais été taxé. Partez toujours de
+> `nb_cafes`.
+
+Le choix `0` affiche ce même rapport une dernière fois, puis un message d'au revoir.
+
+> 💡 Pour éviter d'écrire le rapport en double, placez-le dans un seul bloc
+> `if choix == 2 or choix == 0:` à la fin de la boucle.
+
+**Exemple de rapport** après deux cafés (le premier payé avec 1.25 $, le second avec
+une pièce de 2.00 $) :
+
+```text
+Votre choix : 2
+
+*************** RAPPORT DES VENTES ***************
+Cafés vendus                    :        2
+Ventes avant taxes              :     2.00 $
+Taxes perçues                   :     0.30 $
+Ventes taxes incluses           :     2.30 $
+--------------------------------------------------
+Fonds de caisse du matin        :    10.00 $
+Argent en caisse maintenant     :    12.30 $
+Monnaie rendue aux clients      :     0.95 $
+Gobelets restants               :        3 sur 5
+**************************************************
+```
+
+> 💡 Vérifiez vos chiffres : `10.00 $ + 2.30 $ = 12.30 $` en caisse, et
+> `0.10 $ + 0.85 $ = 0.95 $` de monnaie rendue.
+
+Avec le choix `0`, le même rapport s'affiche, suivi de :
+
+```text
+Merci d'avoir utilisé la distributrice. Bonne journée!
 ```
 
 ---
