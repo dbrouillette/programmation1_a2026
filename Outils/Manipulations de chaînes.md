@@ -12,6 +12,7 @@
 | `s.strip()` | Supprime les caractères invisibles (espaces, tabulations `\t`, retours de ligne `\n`) au début et à la fin de la chaîne. | `"  Salut  ".strip()` → `"Salut"` |
 | `s.lower()` | Convertit tous les caractères en minuscules. | `"PYTHON".lower()` → `"python"` |
 | `s.upper()` | Convertit tous les caractères en majuscules. | `"python".upper()` → `"PYTHON"` |
+| `s.capitalize()` | Met le premier caractère en majuscule et **tous les autres en minuscules**. | `"bonJOUR le monde".capitalize()` → `"Bonjour le monde"` |
 | `s1 == s2` | Compare deux chaînes en tenant compte de la casse. **Utiliser directement `==` pour comparer.** | `"test" == "Test"` → `False` |
 | `s1.lower() == s2.lower()` | Compare deux chaînes sans tenir compte de la casse. | `"test".lower() == "Test".lower()` → `True` |
 | `s[index]` | Retourne le caractère à l'index donné (commence à 0). **Accès direct par indexation avec crochets `[ ]`.** | `"abc"[1]` → `'b'` |
@@ -30,6 +31,16 @@
 | | Si `fin` est omis, la tranche se termine **au début** de `s`. | `"Bonjour"[5::-1]` → `"uojnoB"` |
 | | Cas particulier : tranche complète inversée. | `"Bonjour"[::-2]` → `"ronB"` |
 | `s.replace(cible, remplacement)` | Remplace toutes les occurrences de `cible` par `remplacement` — fonctionne autant pour un seul caractère que pour une chaîne complète. | `"papa".replace("p", "m")` → `"mama"` |
+| `sous_chaine in s` | Vérifie si `sous_chaine` est présente dans `s`. **Opérateur, pas une méthode!** | `"gram" in "programmation"` → `True` |
+| `s.startswith(debut)` | Vérifie si la chaîne commence par `debut`. | `"Bonjour".startswith("Bon")` → `True` |
+| `s.endswith(fin)` | Vérifie si la chaîne se termine par `fin`. | `"photo.jpg".endswith(".jpg")` → `True` |
+| `s.count(sous_chaine)` | Retourne le nombre d'occurrences de `sous_chaine` dans `s`. | `"banane".count("a")` → `3` |
+| `s.isdigit()` | Vérifie si la chaîne contient **uniquement** des chiffres (et au moins un caractère). | `"42".isdigit()` → `True` |
+| | ⚠️ Le signe `-` et le point `.` ne sont pas des chiffres. | `"-5".isdigit()` → `False` |
+| `s.split(separateur)` | Découpe la chaîne en morceaux selon `separateur` et retourne une **liste**. 📋 *Nécessite les listes.* | `"a,b,c".split(",")` → `['a', 'b', 'c']` |
+| `separateur.join(liste)` | Assemble les éléments d'une **liste** en une chaîne, séparés par `separateur`. L'inverse de `split()`. 📋 *Nécessite les listes.* | `"-".join(['a', 'b', 'c'])` → `"a-b-c"` |
+
+> 📋 **Note :** `split()` et `join()` utilisent des **listes**, que nous verrons plus tard dans la session. Elles sont présentées ici pour que le tableau soit complet; nous y reviendrons lorsque les listes auront été vues.
 
 ## 📝 Points importants à retenir
 
@@ -72,6 +83,32 @@ Comme vu dans le fichier sur les opérateurs relationnels, Python compare toujou
 ### 5. Une seule méthode `.replace()` pour tout
 
 **Python n'a qu'une seule méthode `.replace()`**, qui fonctionne peu importe la longueur des chaînes impliquées — que ce soit un seul caractère ou une chaîne complète.
+
+### 6. `in` pour vérifier la présence d'un texte
+
+Pour savoir si une chaîne en contient une autre, `in` est plus simple et plus lisible que `find()` :
+
+```python
+courriel = "etudiant@cegeptr.qc.ca"
+if "@" in courriel:              # ✅ simple et clair
+    print("Courriel valide")
+if courriel.find("@") != -1:     # fonctionne aussi, mais moins lisible
+    print("Courriel valide")
+```
+
+### 7. Valider une saisie avec `isdigit()` avant de convertir
+
+`int(input())` plante si l'utilisateur tape autre chose qu'un nombre. On peut vérifier d'abord avec `isdigit()` :
+
+```python
+reponse = input("Entrez votre âge : ")
+if reponse.isdigit():
+    age = int(reponse)
+else:
+    print("Veuillez entrer un nombre entier positif.")
+```
+
+⚠️ **Attention :** `isdigit()` retourne `False` pour les nombres négatifs (`"-5"`) et les nombres décimaux (`"3.14"`), car `-` et `.` ne sont pas des chiffres.
 
 ## 🎥 Vidéo explicative
 
