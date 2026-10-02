@@ -53,17 +53,28 @@ Exercices :
 - [5.2 — La gestion des erreurs](./Cours%2005/5.2%20-%20La%20gestion%20des%20erreurs.md)
 - [5.3 — La validation de données](./Cours%2005/5.3%20-%20La%20validation%20de%20données.md)
 
+Exercices :
+
+- [Exercices et solutions du Cours 05](./Cours%2005/Exercices/) — fichiers séparés par section.
+
+## Cours 06 — Structures itératives `for` et listes
+
+- [6.1 — La boucle for](./Cours%2006/6.1%20-%20La%20boucle%20for.md)
+- [6.2 — Les listes](./Cours%2006/6.2%20-%20Les%20listes.md)
+- [6.3 — Les boucles for imbriquées et les listes 2D](./Cours%2006/6.3%20-%20Les%20boucles%20for%20imbriquées.md)
+
+Exercices :
+
+- [Exercices et solutions du Cours 06](./Cours%2006/Exercices/) — fichiers séparés par section.
+
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
 - [Date et heure - Module datetime](./Outils/Date%20et%20heure%20-%20Module%20datetime.md)
 - [Manipulations de chaînes](./Outils/Manipulations%20de%20chaînes.md)
 - [Module math](./Outils/Module%20math.md)
+- [Nombres aléatoires - Module random](./Outils/Nombres%20aléatoires%20-%20Module%20random.md)
 - [Raccourcis VS Code](./Outils/Raccourcis%20VS%20Code.md)
-
-Exercices :
-
-- [Exercices et solutions du Cours 05](./Cours%2005/Exercices/) — fichiers séparés par section.
 
 ---
 
