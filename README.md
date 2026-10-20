@@ -67,6 +67,26 @@ Exercices :
 
 - [Exercices et solutions du Cours 06](./Cours%2006/Exercices/) — fichiers séparés par section.
 
+## Cours 07 — Les fonctions
+
+- [7.1 — Pourquoi des fonctions](./Cours%2007/7.1%20-%20Pourquoi%20des%20fonctions.md)
+- [7.2 — Définir et appeler une fonction](./Cours%2007/7.2%20-%20Définir%20et%20appeler%20une%20fonction.md)
+- [7.3 — Paramètres et arguments](./Cours%2007/7.3%20-%20Paramètres%20et%20arguments.md)
+- [7.4 — Renvoyer une valeur](./Cours%2007/7.4%20-%20Renvoyer%20une%20valeur.md)
+- 7.5 — La portée des variables
+- 7.6 — Valeurs par défaut et arguments nommés
+- 7.7 — Documenter une fonction
+- 7.8 — Structurer un programme avec des fonctions
+
+Exercices :
+
+- [Exercices et solutions du Cours 07](./Cours%2007/Exercices/) — fichiers séparés par section (7.1 à 7.4 pour l'instant).
+
+Exemples :
+
+- [Caisse du Café Le Binaire — version 1 fichier](./Cours%2007/Exemples/1%20fichier/caisse.py)
+- [Caisse du Café Le Binaire — version 2 fichiers](./Cours%2007/Exemples/2%20fichiers/) (`caisse.py` et `utilitaires.py`)
+
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
