@@ -122,8 +122,8 @@ afficher_note("Français", 79 + 3)
 
 **Énoncé** : Le programme ci-dessous calcule la moyenne de trois groupes d'un cours. Lis-le attentivement, puis :
 
-a. Repère les **blocs de code répétés** (indique leurs numéros de lignes).
-b. Pour chacun de ces blocs, propose un **nom de fonction** significatif.
+a. Repère les **blocs de code répétés** (indique leurs numéros de lignes).  
+b. Pour chacun de ces blocs, propose un **nom de fonction** significatif.  
 c. Réécris le programme principal (les lignes qui appelleraient tes fonctions) comme s'il utilisait ces fonctions. Les fonctions elles-mêmes n'ont pas à être écrites.
 d. Si on voulait maintenant que les notes soient acceptées entre 0 et **105** (pour un bonus), combien de modifications faudrait-il faire dans le programme actuel? Et dans ta version avec des fonctions?
 

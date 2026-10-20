@@ -26,8 +26,8 @@ print("Bonne session!")
 afficher_titre()
 ```
 
-a. Combien de fois le corps de `afficher_titre()` est-il exécuté?
-b. Pourquoi le texte « Samedi et dimanche : fermé » n'apparaît-il jamais?
+a. Combien de fois le corps de `afficher_titre()` est-il exécuté?  
+b. Pourquoi le texte « Samedi et dimanche : fermé » n'apparaît-il jamais?  
 c. Quelle ligne faudrait-il ajouter, et où, pour qu'il apparaisse juste après les heures de la semaine?
 
 ## 🟢 Exercice 2 : Facile
@@ -149,9 +149,9 @@ Dimanche                   Fermé
 17  print("Bon appétit!")
 ```
 
-a. Sans exécuter le programme, écris la liste des numéros de lignes **dans l'ordre où Python les exécute**. Compte les lignes `def` (Python les lit pour mémoriser les fonctions), mais pas les lignes vides.
-b. Écris ce qu'affiche le programme.
-c. `afficher_dessert()` est appelée à la ligne 8, mais n'est définie qu'à la ligne 11. Le programme provoque-t-il une erreur `NameError`? Explique.
+a. Sans exécuter le programme, écris la liste des numéros de lignes **dans l'ordre où Python les exécute**. Compte les lignes `def` (Python les lit pour mémoriser les fonctions), mais pas les lignes vides.  
+b. Écris ce qu'affiche le programme.  
+c. `afficher_dessert()` est appelée à la ligne 8, mais n'est définie qu'à la ligne 11. Le programme provoque-t-il une erreur `NameError`? Explique.  
 d. Vérifie tes réponses avec le débogueur de VS Code : place un point d'arrêt (`F9`) sur la ligne 15, démarre le débogage (`F5`), puis avance avec `F11` (**Pas à pas détaillé**) en notant chaque ligne surlignée.
 
 ## Solutions
