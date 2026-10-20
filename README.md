@@ -73,10 +73,10 @@ Exercices :
 - [7.2 — Définir et appeler une fonction](./Cours%2007/7.2%20-%20Définir%20et%20appeler%20une%20fonction.md)
 - [7.3 — Paramètres et arguments](./Cours%2007/7.3%20-%20Paramètres%20et%20arguments.md)
 - [7.4 — Renvoyer une valeur](./Cours%2007/7.4%20-%20Renvoyer%20une%20valeur.md)
-- 7.5 — La portée des variables
-- 7.6 — Valeurs par défaut et arguments nommés
-- 7.7 — Documenter une fonction
-- 7.8 — Structurer un programme avec des fonctions
+- [7.5 — La portée des variables](./Cours%2007/7.5%20-%20La%20portée%20des%20variables.md)
+- [7.6 — Valeurs par défaut et arguments nommés](./Cours%2007/7.6%20-%20Valeurs%20par%20défaut%20et%20arguments%20nommés.md)
+- [7.7 — Documenter une fonction](./Cours%2007/7.7%20-%20Documenter%20une%20fonction.md)
+- [7.8 — Structurer un programme avec des fonctions](./Cours%2007/7.8%20-%20Structurer%20un%20programme%20avec%20des%20fonctions.md)
 
 Exercices :
 
