@@ -26,7 +26,7 @@ print("Bonne session!")
 afficher_titre()
 ```
 
-<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=def%20afficher_titre%28%29%3A%0A%20%20%20%20print%28%22---%20Biblioth%C3%A8que%20du%20c%C3%A9gep%20---%22%29%0A%0A%0Adef%20afficher_heures_semaine%28%29%3A%0A%20%20%20%20print%28%22Lundi%20au%20jeudi%20%3A%208%20h%20%C3%A0%2021%20h%22%29%0A%20%20%20%20print%28%22Vendredi%20%3A%208%20h%20%C3%A0%2017%20h%22%29%0A%0A%0Adef%20afficher_heures_fin_semaine%28%29%3A%0A%20%20%20%20print%28%22Samedi%20et%20dimanche%20%3A%20ferm%C3%A9%22%29%0A%0A%0Aafficher_titre%28%29%0Aafficher_heures_semaine%28%29%0Aprint%28%22Bonne%20session%21%22%29%0Aafficher_titre%28%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">exécution...</a></sub></p>
+<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=def%20afficher_titre%28%29%3A%0A%20%20%20%20print%28%22---%20Biblioth%C3%A8que%20du%20c%C3%A9gep%20---%22%29%0A%0A%0Adef%20afficher_heures_semaine%28%29%3A%0A%20%20%20%20print%28%22Lundi%20au%20jeudi%20%3A%208%20h%20%C3%A0%2021%20h%22%29%0A%20%20%20%20print%28%22Vendredi%20%3A%208%20h%20%C3%A0%2017%20h%22%29%0A%0A%0Adef%20afficher_heures_fin_semaine%28%29%3A%0A%20%20%20%20print%28%22Samedi%20et%20dimanche%20%3A%20ferm%C3%A9%22%29%0A%0A%0Aafficher_titre%28%29%0Aafficher_heures_semaine%28%29%0Aprint%28%22Bonne%20session%21%22%29%0Aafficher_titre%28%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">Exécution...</a></sub></p>
 
 a. Combien de fois le corps de `afficher_titre()` est-il exécuté?
 b. Pourquoi le texte « Samedi et dimanche : fermé » n'apparaît-il jamais?
@@ -52,7 +52,7 @@ def Afficher_Au_Revoir():
 afficher_au_revoir
 ```
 
-<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=afficher_menu%28%29%0A%0Adef%20afficher_menu%28%29%0A%20%20%20%20print%28%221.%20Emprunter%20un%20livre%22%29%0Aprint%28%222.%20Retourner%20un%20livre%22%29%0A%20%20%20%20print%28%223.%20Quitter%22%29%0A%0Adef%20Afficher_Au_Revoir%28%29%3A%0A%20%20%20%20print%28%22Merci%20et%20%C3%A0%20bient%C3%B4t%21%22%29%0A%0Aafficher_au_revoir&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">exécution...</a></sub></p>
+<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=afficher_menu%28%29%0A%0Adef%20afficher_menu%28%29%0A%20%20%20%20print%28%221.%20Emprunter%20un%20livre%22%29%0Aprint%28%222.%20Retourner%20un%20livre%22%29%0A%20%20%20%20print%28%223.%20Quitter%22%29%0A%0Adef%20Afficher_Au_Revoir%28%29%3A%0A%20%20%20%20print%28%22Merci%20et%20%C3%A0%20bient%C3%B4t%21%22%29%0A%0Aafficher_au_revoir&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">Exécution...</a></sub></p>
 
 > 💡 L'une de ces erreurs ne provoque **aucun** message d'erreur : le programme s'exécute, mais ne fait pas ce qu'on attend.
 
@@ -153,7 +153,7 @@ Dimanche                   Fermé
 17  print("Bon appétit!")
 ```
 
-<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=def%20afficher_bonjour%28%29%3A%0A%20%20%20%20print%28%22Bonjour%21%22%29%0A%0A%0Adef%20afficher_menu_du_jour%28%29%3A%0A%20%20%20%20afficher_bonjour%28%29%0A%20%20%20%20print%28%22Soupe%20%3A%20poulet%20et%20nouilles%22%29%0A%20%20%20%20afficher_dessert%28%29%0A%0A%0Adef%20afficher_dessert%28%29%3A%0A%20%20%20%20print%28%22Dessert%20%3A%20pouding%20ch%C3%B4meur%22%29%0A%0A%0Aprint%28%22Caf%C3%A9t%C3%A9ria%20du%20c%C3%A9gep%22%29%0Aafficher_menu_du_jour%28%29%0Aprint%28%22Bon%20app%C3%A9tit%21%22%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">exécution...</a></sub></p>
+<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=def%20afficher_bonjour%28%29%3A%0A%20%20%20%20print%28%22Bonjour%21%22%29%0A%0A%0Adef%20afficher_menu_du_jour%28%29%3A%0A%20%20%20%20afficher_bonjour%28%29%0A%20%20%20%20print%28%22Soupe%20%3A%20poulet%20et%20nouilles%22%29%0A%20%20%20%20afficher_dessert%28%29%0A%0A%0Adef%20afficher_dessert%28%29%3A%0A%20%20%20%20print%28%22Dessert%20%3A%20pouding%20ch%C3%B4meur%22%29%0A%0A%0Aprint%28%22Caf%C3%A9t%C3%A9ria%20du%20c%C3%A9gep%22%29%0Aafficher_menu_du_jour%28%29%0Aprint%28%22Bon%20app%C3%A9tit%21%22%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">Exécution...</a></sub></p>
 
 a. Sans exécuter le programme, écris la liste des numéros de lignes **dans l'ordre où Python les exécute**. Compte les lignes `def` (Python les lit pour mémoriser les fonctions), mais pas les lignes vides.
 b. Écris ce qu'affiche le programme.

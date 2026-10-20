@@ -29,7 +29,7 @@ print(afficher_prix_taxes(4))
 calculer_prix_taxes(50)
 ```
 
-<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=TAUX_TAXES%20%3D%200.14975%0A%0A%0Adef%20calculer_prix_taxes%28prix%29%3A%0A%20%20%20%20return%20round%28prix%20%2A%20%281%20%2B%20TAUX_TAXES%29%2C%202%29%0A%0A%0Adef%20afficher_prix_taxes%28prix%29%3A%0A%20%20%20%20print%28f%22%7Bprix%20%2A%20%281%20%2B%20TAUX_TAXES%29%3A.2f%7D%20%24%22%29%0A%0A%0Aa%20%3D%20calculer_prix_taxes%2810%29%0Ab%20%3D%20afficher_prix_taxes%2810%29%0Aprint%28a%2C%20b%29%0Aprint%28calculer_prix_taxes%2830%29%20%2B%205%29%0Aafficher_prix_taxes%28calculer_prix_taxes%28100%29%29%0Aprint%28afficher_prix_taxes%284%29%29%0Acalculer_prix_taxes%2850%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">exécution...</a></sub></p>
+<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=TAUX_TAXES%20%3D%200.14975%0A%0A%0Adef%20calculer_prix_taxes%28prix%29%3A%0A%20%20%20%20return%20round%28prix%20%2A%20%281%20%2B%20TAUX_TAXES%29%2C%202%29%0A%0A%0Adef%20afficher_prix_taxes%28prix%29%3A%0A%20%20%20%20print%28f%22%7Bprix%20%2A%20%281%20%2B%20TAUX_TAXES%29%3A.2f%7D%20%24%22%29%0A%0A%0Aa%20%3D%20calculer_prix_taxes%2810%29%0Ab%20%3D%20afficher_prix_taxes%2810%29%0Aprint%28a%2C%20b%29%0Aprint%28calculer_prix_taxes%2830%29%20%2B%205%29%0Aafficher_prix_taxes%28calculer_prix_taxes%28100%29%29%0Aprint%28afficher_prix_taxes%284%29%29%0Acalculer_prix_taxes%2850%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">Exécution...</a></sub></p>
 
 > 💡 Une ligne du programme n'affiche rien du tout. Laquelle, et pourquoi? Une autre affiche un montant qui n'a pas de sens. Laquelle?
 
@@ -63,7 +63,7 @@ Traceback (most recent call last):
 TypeError: '>=' not supported between instances of 'NoneType' and 'int'
 ```
 
-<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=SEUIL_REUSSITE%20%3D%2060%0A%0A%0Adef%20calculer_moyenne%28notes%29%3A%0A%20%20%20%20total%20%3D%200%0A%20%20%20%20for%20note%20in%20notes%3A%0A%20%20%20%20%20%20%20%20total%20%2B%3D%20note%0A%20%20%20%20print%28total%20%2F%20len%28notes%29%29%0A%0A%0Anotes_groupe%20%3D%20%5B78%2C%2054%2C%2091%2C%2066%2C%2083%5D%0Amoyenne%20%3D%20calculer_moyenne%28notes_groupe%29%0Aif%20moyenne%20%3E%3D%20SEUIL_REUSSITE%3A%0A%20%20%20%20print%28%22Le%20groupe%20r%C3%A9ussit%20en%20moyenne.%22%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">exécution...</a></sub></p>
+<p align="right"><sub><a href="https://pythontutor.com/visualize.html#code=SEUIL_REUSSITE%20%3D%2060%0A%0A%0Adef%20calculer_moyenne%28notes%29%3A%0A%20%20%20%20total%20%3D%200%0A%20%20%20%20for%20note%20in%20notes%3A%0A%20%20%20%20%20%20%20%20total%20%2B%3D%20note%0A%20%20%20%20print%28total%20%2F%20len%28notes%29%29%0A%0A%0Anotes_groupe%20%3D%20%5B78%2C%2054%2C%2091%2C%2066%2C%2083%5D%0Amoyenne%20%3D%20calculer_moyenne%28notes_groupe%29%0Aif%20moyenne%20%3E%3D%20SEUIL_REUSSITE%3A%0A%20%20%20%20print%28%22Le%20groupe%20r%C3%A9ussit%20en%20moyenne.%22%29&cumulative=false&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false">Exécution...</a></sub></p>
 
 a. Explique pourquoi la variable `moyenne` contient `None`.
 b. Corrige la fonction. Le programme principal doit ensuite afficher lui-même la moyenne (1 décimale), puis le message.
