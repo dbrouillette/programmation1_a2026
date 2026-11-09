@@ -87,6 +87,41 @@ Exemples :
 - [Caisse du Café Le Binaire — version 1 fichier](./Cours%2007/Exemples/1%20fichier/caisse.py)
 - [Caisse du Café Le Binaire — version 2 fichiers](./Cours%2007/Exemples/2%20fichiers/) (`caisse.py` et `utilitaires.py`)
 
+## Cours 08 — Les fichiers : texte, CSV et JSON
+
+- [8.1 — Lire un fichier texte](./Cours%2008/8.1%20-%20Lire%20un%20fichier%20texte.md)
+- [8.2 — Écrire dans un fichier texte](./Cours%2008/8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md)
+- [8.3 — Les fichiers CSV à la main](./Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)
+- [8.4 — Le module csv](./Cours%2008/8.4%20-%20Le%20module%20csv.md)
+- [8.5 — Le format JSON](./Cours%2008/8.5%20-%20Le%20format%20JSON.md)
+
+Exercices :
+
+- [Exercices et solutions du Cours 08](./Cours%2008/Exercices/) — fichiers séparés par section.
+
+Exemples :
+
+- [Inventaire du Café Le Binaire — CSV à la main](./Cours%2008/Exemples/1%20-%20CSV%20à%20la%20main/) (`inventaire.py` et `menu.csv`)
+- [Inventaire du Café Le Binaire — module csv](./Cours%2008/Exemples/2%20-%20Module%20csv/) (`inventaire.py` et `menu.csv`)
+
+## Cours 09 — Les dictionnaires
+
+> 🎄 Les exercices du cours 9 préparent le TP3 (spectacle de Noël : musique et lumières du sapin).
+
+- [9.1 — Les dictionnaires](./Cours%2009/9.1%20-%20Les%20dictionnaires.md)
+- [9.2 — Parcourir un dictionnaire](./Cours%2009/9.2%20-%20Parcourir%20un%20dictionnaire.md)
+- [9.3 — Listes de dictionnaires et données imbriquées](./Cours%2009/9.3%20-%20Listes%20de%20dictionnaires%20et%20données%20imbriquées.md)
+- [9.4 — Sauvegarder les paramètres d'une application](./Cours%2009/9.4%20-%20Sauvegarder%20les%20paramètres%20d'une%20application.md)
+
+Exercices :
+
+- [Exercices et solutions du Cours 09](./Cours%2009/Exercices/) — fichiers séparés par section.
+- [Exercice synthèse — Le lecteur du sapin](./Cours%2009/Exercices/Exercice%20-%20Le%20lecteur%20du%20sapin.md) — préparation au TP3, avec [fichiers de départ](./Cours%2009/Exercices/Le%20lecteur%20du%20sapin/)
+
+Exemples :
+
+- [Paramètres d'une application en JSON](./Cours%2009/Exemples/Paramètres%20JSON/parametres_app.py)
+
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
