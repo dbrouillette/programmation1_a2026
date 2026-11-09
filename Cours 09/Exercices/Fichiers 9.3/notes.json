@@ -1,0 +1,13 @@
+[
+    {"note": "DO4", "intensite": 70, "duree": 400},
+    {"note": "DO4", "intensite": 70, "duree": 400},
+    {"note": "DO4", "intensite": 70, "duree": 400},
+    {"note": "RE4", "intensite": 70, "duree": 400},
+    {"note": "MI4", "intensite": 90, "duree": 800},
+    {"note": "RE4", "intensite": 90, "duree": 800},
+    {"note": "DO4", "intensite": 70, "duree": 400},
+    {"note": "MI4", "intensite": 70, "duree": 400},
+    {"note": "RE4", "intensite": 70, "duree": 400},
+    {"note": "RE4", "intensite": 70, "duree": 400},
+    {"note": "DO4", "intensite": 100, "duree": 1200}
+]

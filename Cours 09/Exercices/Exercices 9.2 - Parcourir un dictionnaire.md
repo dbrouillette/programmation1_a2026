@@ -1,6 +1,6 @@
 # Exercices — Parcourir un dictionnaire (fiche 9.2)
 
-> 🎄 **Vers le TP3** : dans ces exercices, on analyse une vraie chanson, le refrain de *Vive le vent* (mélodie de *Jingle Bells*, J. Pierpont, 1857, domaine public). Chaque note est une rangée `[note, intensite, duree]` : la note (`"MI4"`), l'intensité lumineuse (0 à 100 %) et la durée (en millisecondes). C'est le format des chansons du TP3.
+> 🎄 **Fil conducteur** : dans ces exercices, on analyse une vraie chanson, le refrain de *Vive le vent* (mélodie de *Jingle Bells*, J. Pierpont, 1857, domaine public). Chaque note est une rangée `[note, intensite, duree]` : la note (`"MI4"`), l'intensité lumineuse (0 à 100 %) et la durée (en millisecondes).
 
 > 📌 Copie ces données au début de tes programmes lorsqu'un exercice en a besoin :
 
@@ -115,7 +115,7 @@ Note dominante : MI4 (56 % du temps)
 
 **But** : Construire un dictionnaire de résultats pendant une validation.
 
-**Énoncé** : Dans le TP3, les chansons viendront de fichiers écrits à la main… avec des erreurs! Voici une chanson à vérifier (*Au clair de la lune*) :
+**Énoncé** : Les chansons écrites à la main contiennent souvent des erreurs! Voici une chanson à vérifier (*Au clair de la lune*) :
 
 ```python
 CHANSON_A_VERIFIER = [

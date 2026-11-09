@@ -106,7 +106,7 @@ Exemples :
 
 ## Cours 09 — Les dictionnaires
 
-> 🎄 Les exercices du cours 9 préparent le TP3 (spectacle de Noël : musique et lumières du sapin).
+> 🎄 Fil conducteur du cours 9 : un spectacle de Noël (musique et lumières d'un sapin).
 
 - [9.1 — Les dictionnaires](./Cours%2009/9.1%20-%20Les%20dictionnaires.md)
 - [9.2 — Parcourir un dictionnaire](./Cours%2009/9.2%20-%20Parcourir%20un%20dictionnaire.md)
@@ -116,7 +116,7 @@ Exemples :
 Exercices :
 
 - [Exercices et solutions du Cours 09](./Cours%2009/Exercices/) — fichiers séparés par section.
-- [Exercice synthèse — Le lecteur du sapin](./Cours%2009/Exercices/Exercice%20-%20Le%20lecteur%20du%20sapin.md) — préparation au TP3, avec [fichiers de départ](./Cours%2009/Exercices/Le%20lecteur%20du%20sapin/)
+- [Exercice synthèse — Le lecteur du sapin](./Cours%2009/Exercices/Exercice%20-%20Le%20lecteur%20du%20sapin.md) — avec [fichiers de départ](./Cours%2009/Exercices/Le%20lecteur%20du%20sapin/)
 
 Exemples :
 

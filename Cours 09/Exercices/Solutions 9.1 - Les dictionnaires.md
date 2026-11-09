@@ -71,7 +71,7 @@ main()
 - La fonction `creer_fiche()` renvoie directement un dictionnaire construit avec ses paramètres.
 - `afficher_lcd()` ne reçoit qu'**un seul** paramètre, le dictionnaire, plutôt que trois. Si on ajoute une clé à la fiche plus tard, la signature de la fonction ne change pas.
 - La largeur peut être une variable dans le format : `:<{LARGEUR_LCD}`. On peut aussi écrire `:<16` directement.
-- Dans le TP3, l'afficheur réel recevra exactement ces deux chaînes de 16 caractères.
+- Un afficheur réel recevrait exactement ces deux chaînes de 16 caractères.
 
 ## 🟡 Exercice 3 : Moyen
 
@@ -233,4 +233,4 @@ main()
 - La valeur par défaut de `get()` peut être n'importe quoi, y compris un tuple.
 - `return rouge, vert, bleu` renvoie un tuple, comme en 7.4.
 - On peut déballer le tuple de la couleur en une ligne : `r, v, b = COULEURS_RGB.get(...)`.
-- Dans le TP3, ce tuple est exactement ce qu'on enverra à chaque DEL de la bande lumineuse.
+- Ce tuple est exactement ce qu'on enverrait à chaque DEL d'une vraie bande lumineuse.

@@ -2,7 +2,7 @@
 
 **Thèmes couverts :** fonctions et modèle à 2 fichiers (Cours 07), fichiers JSON (Cours 08), dictionnaires, parcours, patron compteur, listes de dictionnaires et paramètres d'application (Cours 09).
 
-> 🎯 **Préparation au TP3** : cet exercice construit le **lecteur** du spectacle de Noël. Dans le TP3, on y ajoutera la création et la modification des chansons, puis on branchera le vrai sapin : bande de DEL, afficheur LCD et haut-parleur sur le Raspberry Pi.
+> 🎯 **Exercice synthèse** : cet exercice construit le **lecteur** du spectacle de Noël : il joue les chansons en simulant le son et les lumières du sapin.
 
 ---
 
@@ -72,7 +72,7 @@ Complète `charger_bibliotheque(chemin)` : elle **renvoie** la liste des chanson
 +----------------+
 ```
 
-> ⚠️ Un vrai afficheur LCD 16 × 2 ne connaît que les caractères **ASCII** (voir la fiche 8.1 sur l'encodage) : il n'a pas de lettres accentuées! C'est pourquoi le programme principal affiche « Noel du Cegep! » sans accents. Dans le TP3, il faudra retirer les accents des titres avant de les envoyer à l'afficheur.
+> ⚠️ Un vrai afficheur LCD 16 × 2 ne connaît que les caractères **ASCII** (voir la fiche 8.1 sur l'encodage) : il n'a pas de lettres accentuées! C'est pourquoi le programme principal affiche « Noel du Cegep! » sans accents. Pour afficher un titre accentué, il faut donc d'abord retirer ses accents.
 
 ---
 
