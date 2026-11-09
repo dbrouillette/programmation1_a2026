@@ -81,14 +81,13 @@ main()
 ### ✅ Solution 3
 
 ```python
-import csv
 import json
 from pathlib import Path
 
 from utilitaires import lire_texte
 
 DOSSIER = Path(__file__).parent
-CHEMIN_NOTES = DOSSIER / "notes.csv"
+CHEMIN_NOTES = DOSSIER / "notes.json"
 CHEMIN_CHANSON = DOSSIER / "chanson.json"
 
 FREQUENCES = {
@@ -96,34 +95,63 @@ FREQUENCES = {
     "SOL4": 392, "LA4": 440, "SI4": 494, "DO5": 523,
 }
 SILENCE = "-"
+CLES_NOTE = ["note", "intensite", "duree"]
 LARGEUR_LCD = 16
 
 
-def lire_notes_csv(chemin):
-    """Renvoie la liste des notes valides du fichier CSV, sous forme de dictionnaires.
+def charger_json(chemin):
+    """Renvoie le contenu du fichier JSON, ou None s'il est absent ou invalide."""
+    try:
+        with open(chemin, "r", encoding="utf-8") as fichier:
+            return json.load(fichier)
+    except FileNotFoundError:
+        print(f"Erreur : {chemin.name} est introuvable.")
+    except json.JSONDecodeError:
+        print(f"Erreur : {chemin.name} contient une erreur de syntaxe JSON.")
+    return None
 
-    Les lignes invalides sont ignorées avec un avertissement.
+
+def verifier_note(element):
+    """Renvoie un message d'erreur si l'élément n'est pas une note valide, sinon ""."""
+    if type(element) != dict:
+        return "ce n'est pas un dictionnaire"
+    for cle in CLES_NOTE:
+        if cle not in element:
+            return "clé manquante"
+    nom = element["note"]
+    if type(nom) != str or (nom.strip().upper() not in FREQUENCES
+                            and nom.strip() != SILENCE):
+        return f"note « {nom} » inconnue"
+    if type(element["intensite"]) != int or type(element["duree"]) != int:
+        return "intensité ou durée non entière"
+    if not 0 <= element["intensite"] <= 100 or not 50 <= element["duree"] <= 2000:
+        return "intensité ou durée hors limites"
+    return ""
+
+
+def lire_notes_json(chemin):
+    """Renvoie la liste des notes valides du fichier JSON.
+
+    Les notes invalides sont ignorées avec un avertissement.
     """
+    donnees = charger_json(chemin)
+    if donnees is None:
+        return []
+    if type(donnees) != list:
+        print(f"Erreur : {chemin.name} doit contenir une liste de notes.")
+        return []
+
     notes = []
-    with open(chemin, "r", encoding="utf-8", newline="") as fichier:
-        numero = 1                                  # l'en-tête est la ligne 1
-        for rangee in csv.DictReader(fichier):
-            numero += 1
-            if None in rangee.values():             # DictReader met None si une colonne manque
-                print(f"Ligne {numero} ignorée : valeur manquante.")
-            else:
-                try:
-                    note = rangee["note"].strip().upper()
-                    intensite = int(rangee["intensite"])
-                    duree = int(rangee["duree"])
-                    if note != SILENCE and note not in FREQUENCES:
-                        print(f"Ligne {numero} ignorée : note « {note} » inconnue.")
-                    elif not 0 <= intensite <= 100 or not 50 <= duree <= 2000:
-                        print(f"Ligne {numero} ignorée : intensité ou durée hors limites.")
-                    else:
-                        notes.append({"note": note, "intensite": intensite, "duree": duree})
-                except ValueError:
-                    print(f"Ligne {numero} ignorée : intensité ou durée non numérique.")
+    for i in range(len(donnees)):
+        erreur = verifier_note(donnees[i])
+        if erreur != "":
+            print(f"Note {i + 1} ignorée : {erreur}.")
+        else:
+            notes.append({
+                "note": donnees[i]["note"].strip().upper(),
+                "intensite": donnees[i]["intensite"],
+                "duree": donnees[i]["duree"],
+            })
     return notes
 
 
@@ -140,8 +168,10 @@ def sauvegarder_chanson(chemin, chanson):
 
 
 def main():
-    notes = lire_notes_csv(CHEMIN_NOTES)
+    notes = lire_notes_json(CHEMIN_NOTES)
     print(f"{len(notes)} notes lues dans {CHEMIN_NOTES.name}.")
+    if len(notes) == 0:
+        return
 
     chanson = {
         "titre": lire_texte("Titre : "),
@@ -160,17 +190,17 @@ def main():
 main()
 ```
 
-- `csv.DictReader` utilise l'en-tête `note,intensite,duree` comme clés : `rangee["duree"]` plutôt que `champs[2]`.
-- Quand une ligne a moins de colonnes que l'en-tête, `DictReader` met `None` pour les colonnes manquantes. `None in rangee.values()` le détecte avant toute conversion; sinon, `int(None)` lèverait une `TypeError`.
-- La note est normalisée (`strip()` et `upper()`) : `mi4` dans le fichier est accepté.
-- La chanson sauvegardée contient de **vrais nombres** : le JSON n'aura plus jamais besoin de conversion.
+- `verifier_note()` renvoie un **message d'erreur** (ou `""` si tout va bien) : `lire_notes_json()` n'a qu'à l'afficher avec le numéro de la note.
+- L'ordre des vérifications compte : on vérifie que les trois clés existent **avant** de lire `element["duree"]`, sinon on obtiendrait une `KeyError`.
+- `type(...) == int` refuse `"70"` (une chaîne) et `70.5` (un réel). Avec JSON, il n'y a rien à convertir : on vérifie seulement le type.
+- La note est normalisée (`strip()` et `upper()`) : `"mi4"` dans le fichier est accepté.
+- `json.JSONDecodeError` couvre toutes les erreurs de syntaxe : virgule de trop, guillemets simples, crochet oublié.
 
 ## 🟡 Exercice 4 : Moyen
 
 ### ✅ Solution 4
 
 ```python
-import csv
 import json
 from pathlib import Path
 
@@ -178,16 +208,17 @@ from utilitaires import lire_entier, lire_texte, lire_oui_non
 
 DOSSIER = Path(__file__).parent
 CHEMIN_BIBLIOTHEQUE = DOSSIER / "bibliotheque.json"
-CHEMIN_NOTES = DOSSIER / "notes.csv"
+CHEMIN_NOTES = DOSSIER / "notes.json"
 
 FREQUENCES = {
     "DO4": 262, "RE4": 294, "MI4": 330, "FA4": 349,
     "SOL4": 392, "LA4": 440, "SI4": 494, "DO5": 523,
 }
 SILENCE = "-"
+CLES_NOTE = ["note", "intensite", "duree"]
 
 
-# lire_notes_csv(chemin) : identique à l'exercice 3
+# charger_json(), verifier_note() et lire_notes_json() : identiques à l'exercice 3
 
 
 def charger_bibliotheque(chemin):
@@ -235,7 +266,7 @@ def chercher_titre(bibliotheque, titre):
 
 
 def importer_chanson(bibliotheque):
-    notes = lire_notes_csv(CHEMIN_NOTES)
+    notes = lire_notes_json(CHEMIN_NOTES)
     if len(notes) == 0:
         print("Aucune note valide : importation annulée.")
         return
@@ -263,7 +294,7 @@ def main():
     bibliotheque = charger_bibliotheque(CHEMIN_BIBLIOTHEQUE)
     choix = -1
     while choix != 0:
-        print("1. Catalogue  2. Importer notes.csv  3. Supprimer  0. Quitter")
+        print("1. Catalogue  2. Importer notes.json  3. Supprimer  0. Quitter")
         choix = lire_entier("Choix : ", 0, 3)
         if choix == 1:
             afficher_catalogue(bibliotheque)
@@ -279,7 +310,7 @@ def main():
 main()
 ```
 
-- `lire_notes_csv()` est copiée de l'exercice 3, sans modification. Dans un vrai projet, on la placerait dans un module (fiche 7.8) pour l'importer plutôt que de la recopier.
+- `lire_notes_json()` (et les deux fonctions qu'elle utilise) est copiée de l'exercice 3, sans modification. Dans un vrai projet, on la placerait dans un module (fiche 7.8) pour l'importer plutôt que de la recopier.
 - Toute la bibliothèque (une liste de dictionnaires qui contiennent des listes de dictionnaires!) est sauvegardée et rechargée en **une seule ligne** chacune.
 - `calculer_duree()` cache les détails de la structure : le catalogue reste lisible.
 - `importer_chanson()` utilise des `return` pour **annuler** l'importation dès qu'un problème est détecté, sans imbriquer les `if`.
@@ -290,7 +321,6 @@ main()
 ### ✅ Solution 5
 
 ```python
-import csv
 import json
 from pathlib import Path
 
@@ -299,7 +329,6 @@ from utilitaires import lire_entier
 DOSSIER = Path(__file__).parent
 CHEMIN_BIBLIOTHEQUE = DOSSIER / "bibliotheque.json"
 DOSSIER_CLE = DOSSIER / "cle_usb"
-COLONNES = ["note", "intensite", "duree"]
 
 
 def charger_bibliotheque(chemin):
@@ -313,26 +342,15 @@ def charger_bibliotheque(chemin):
 
 
 def exporter_chanson(chanson, dossier):
-    """Écrit notes.csv et titre.txt dans le dossier (créé au besoin)."""
+    """Écrit la chanson dans dossier/chanson.json (dossier créé au besoin)."""
     dossier.mkdir(exist_ok=True)
-    with open(dossier / "notes.csv", "w", encoding="utf-8", newline="") as fichier:
-        ecrivain = csv.DictWriter(fichier, fieldnames=COLONNES)
-        ecrivain.writeheader()
-        ecrivain.writerows(chanson["notes"])
-    with open(dossier / "titre.txt", "w", encoding="utf-8") as fichier:
-        fichier.write(f"{chanson['titre']}\n{chanson['auteur']}\n")
+    with open(dossier / "chanson.json", "w", encoding="utf-8") as fichier:
+        json.dump(chanson, fichier, indent=4, ensure_ascii=False)
 
 
-def relire_notes(chemin):
-    notes = []
-    with open(chemin, "r", encoding="utf-8", newline="") as fichier:
-        for rangee in csv.DictReader(fichier):
-            notes.append({
-                "note": rangee["note"],
-                "intensite": int(rangee["intensite"]),
-                "duree": int(rangee["duree"]),
-            })
-    return notes
+def relire_chanson(chemin):
+    with open(chemin, "r", encoding="utf-8") as fichier:
+        return json.load(fichier)
 
 
 def main():
@@ -347,10 +365,10 @@ def main():
     chanson = bibliotheque[numero - 1]
 
     exporter_chanson(chanson, DOSSIER_CLE)
-    print(f"« {chanson['titre']} » exportée dans le dossier {DOSSIER_CLE.name}.")
+    print(f"« {chanson['titre']} » exportée dans {DOSSIER_CLE.name}/chanson.json.")
 
     # Vérification : on relit le fichier et on compare avec l'original
-    if relire_notes(DOSSIER_CLE / "notes.csv") == chanson["notes"]:
+    if relire_chanson(DOSSIER_CLE / "chanson.json") == chanson:
         print(f"✅ Vérification réussie : {len(chanson['notes'])} notes identiques.")
     else:
         print("❌ Le fichier exporté ne correspond pas à la chanson!")
@@ -359,7 +377,6 @@ def main():
 main()
 ```
 
-- `writerows()` écrit directement la liste de dictionnaires : les clés de chaque note correspondent exactement aux `fieldnames`.
-- `titre.txt` est un simple fichier texte de deux lignes (fiche 8.2) : tous les formats vus au cours 8 cohabitent.
-- La vérification compare deux **listes de dictionnaires** avec `==`. Elle échouerait si on oubliait de convertir l'intensité et la durée en `int` à la relecture : `"70" == 70` est faux.
-- Dans le TP3, c'est exactement ce dossier (`notes.csv` + `titre.txt`) que le Raspberry Pi lira sur la clé USB.
+- La chanson complète (titre, auteur **et** notes) tient dans **un seul** fichier : un dictionnaire qui contient une liste de dictionnaires.
+- La vérification compare deux **dictionnaires** avec `==`, en profondeur : les listes de notes sont comparées elles aussi, note par note.
+- Aucune conversion n'est nécessaire à la relecture : JSON conserve les entiers. Avec un fichier texte ou CSV, `"70" == 70` aurait fait échouer la comparaison.

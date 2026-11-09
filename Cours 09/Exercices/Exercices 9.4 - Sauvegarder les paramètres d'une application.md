@@ -90,7 +90,7 @@ La liste est sauvegardée après chaque ouverture.
 
 ```text
 Fichiers récents :
-  1. notes.csv
+  1. notes.json
   2. menu.json
   3. rapport.txt
 
@@ -99,7 +99,7 @@ Ouverture de menu.json...
 
 Fichiers récents :
   1. menu.json
-  2. notes.csv
+  2. notes.json
   3. rapport.txt
 
 Fichier à ouvrir (Entrée pour quitter) :

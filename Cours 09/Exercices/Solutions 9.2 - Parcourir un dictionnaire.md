@@ -233,7 +233,7 @@ main()
 - `trouver_erreur()` utilise un `return` dans chaque `if` : la fonction s'arrête à la **première** erreur trouvée (fiche 7.4, section 7). La rangée 10 n'a donc qu'un message, même si sa durée est aussi invalide.
 - Les clés du dictionnaire `erreurs` sont des **entiers** (les numéros de note) : un dictionnaire n'est pas limité aux clés chaînes.
 - `(i + 1) not in erreurs` vérifie rapidement si une rangée a une erreur, sans reparcourir toute la chanson.
-- Dans le TP3, cette validation sera faite **une seule fois**, au chargement du fichier.
+- Dans un vrai programme, cette validation est faite **une seule fois**, au chargement du fichier.
 
 ## 🔴 Exercice 5 : Moyen-Difficile
 
@@ -312,4 +312,4 @@ main()
 - Les valeurs du dictionnaire sont des **chaînes de codes de couleur** : `Fore.YELLOW + Style.BRIGHT` est simplement une concaténation de deux codes.
 - `note[:-1]` retire l'octave (fiche 9.1, exercice 5) : les notes `DO4` et `DO5` ont la même couleur.
 - Dans `afficher_sapin_lumineux()`, chaque symbole a sa couleur : on ajoute `Style.RESET_ALL` après chacun, et on n'affiche la ligne qu'à la fin.
-- Dans le TP3, la même logique servira à allumer les vraies DEL : on remplacera simplement le code `colorama` par le tuple `(r, v, b)` de l'exercice 9.1.
+- La même logique servirait à allumer de vraies DEL : on remplacera simplement le code `colorama` par le tuple `(r, v, b)` de l'exercice 9.1.

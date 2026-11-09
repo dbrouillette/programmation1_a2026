@@ -1,6 +1,6 @@
 # Exercices — Les dictionnaires (fiche 9.1)
 
-> 🎄 **Vers le TP3** : les exercices du cours 9 construisent, morceau par morceau, les outils du spectacle de Noël : la fiche d'une chanson, l'afficheur 16 × 2 du sapin, la table des fréquences pour le son et les couleurs des lumières.
+> 🎄 **Fil conducteur** : les exercices du cours 9 construisent, morceau par morceau, les outils du spectacle de Noël : la fiche d'une chanson, l'afficheur 16 × 2 du sapin, la table des fréquences pour le son et les couleurs des lumières.
 
 > 📌 **Validation obligatoire** : chaque saisie doit être validée. Réutilise tes fonctions `lire_entier()`, `lire_texte()` et `lire_oui_non()` de ton module `utilitaires.py` (fiche 7.8).
 
@@ -34,7 +34,7 @@ print(chanson["duree"])
 
 **But** : Créer un dictionnaire et le passer à une fonction.
 
-**Énoncé** : Le sapin du TP3 a un petit **afficheur LCD de 16 × 2** : 2 lignes de **16 caractères** maximum. La première ligne montre le titre de la chanson, la deuxième, son auteur.
+**Énoncé** : Le sapin musical a un petit **afficheur LCD de 16 × 2** : 2 lignes de **16 caractères** maximum. La première ligne montre le titre de la chanson, la deuxième, son auteur.
 
 Écris :
 
@@ -77,7 +77,7 @@ FREQUENCES = {
 }
 ```
 
-Écris une fonction `frequence_de(note)` qui **renvoie** la fréquence de la note. Elle accepte les minuscules et les espaces autour (`" sol4 "`). Une note absente de la table renvoie `0`, qui représentera un **silence** dans le TP3. Utilise `get()`.
+Écris une fonction `frequence_de(note)` qui **renvoie** la fréquence de la note. Elle accepte les minuscules et les espaces autour (`" sol4 "`). Une note absente de la table renvoie `0`, qui représente un **silence**. Utilise `get()`.
 
 Le programme demande des notes jusqu'à ce que l'utilisateur appuie sur Entrée sans rien écrire. Pour chaque note, il affiche sa fréquence, ou un message si la note est inconnue.
 
