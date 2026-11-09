@@ -146,7 +146,7 @@ Deux problèmes peuvent survenir à la lecture :
 | `FileNotFoundError` | Le fichier n'existe pas (souvent : première exécution) |
 | `json.JSONDecodeError` | Le fichier existe, mais ce n'est pas du JSON valide (modifié à la main avec une erreur) |
 
-On reprend le duo `charger_...()` / `sauvegarder_...()` de [8.2](8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md) :
+On reprend le duo `charger_...()` / `sauvegarder_...()` de [8.2](../Cours%2008/8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md) :
 
 ```python
 import json
@@ -224,4 +224,4 @@ print(liste)            # [1, 2.5, True, None]
 
 ## Exercices
 
-➡️ Des exercices d'application se trouvent dans [Exercices 8.5 - Le format JSON](Exercices/Exercices%208.5%20-%20Le%20format%20JSON.md) et [Solutions 8.5 - Le format JSON](Exercices/Solutions%208.5%20-%20Le%20format%20JSON.md).
+➡️ Des exercices d'application se trouvent dans [Exercices - Module json](Exercices/Exercices%20-%20Module%20json.md) et [Solutions - Module json](Exercices/Solutions%20-%20Module%20json.md).

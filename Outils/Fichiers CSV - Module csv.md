@@ -9,7 +9,7 @@
 
 ## 1. Principe
 
-En [8.3](8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md), on a tout fait à la main avec `split()` et `join()`. Ça fonctionne, mais ça casse dès qu'une valeur contient une virgule ou des guillemets.
+En [8.3](../Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md), on a tout fait à la main avec `split()` et `join()`. Ça fonctionne, mais ça casse dès qu'une valeur contient une virgule ou des guillemets.
 
 Le module `csv` fait **partie de Python** (rien à installer) et connaît toutes les règles du format. Il fait le découpage et l'assemblage à notre place. Tout le reste (les boucles, la liste 2D, les conversions) **ne change pas**.
 
@@ -127,7 +127,7 @@ ecrivain = csv.writer(fichier, delimiter=";")
 
 > ⚠️ Le module `csv` ne touche pas aux nombres : `"4,50"` reste `"4,50"`. Pour le convertir : `float(champs[2].replace(",", "."))`.
 
-Pour un fichier exporté par Excel, l'encodage `"utf-8-sig"` (voir [8.3, section 6](8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)) évite d'avoir un caractère invisible au début du premier en-tête. En **écriture**, `"utf-8-sig"` aide aussi Excel à afficher correctement les accents.
+Pour un fichier exporté par Excel, l'encodage `"utf-8-sig"` (voir [8.3, section 6](../Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)) évite d'avoir un caractère invisible au début du premier en-tête. En **écriture**, `"utf-8-sig"` aide aussi Excel à afficher correctement les accents.
 
 ## 6. Pour aller plus loin : `csv.DictReader`
 
@@ -161,6 +161,6 @@ Pour un fichier exporté par Excel, l'encodage `"utf-8-sig"` (voir [8.3, section
 
 ## Exercices
 
-➡️ Des exercices d'application se trouvent dans [Exercices 8.4 - Le module csv](Exercices/Exercices%208.4%20-%20Le%20module%20csv.md) et [Solutions 8.4 - Le module csv](Exercices/Solutions%208.4%20-%20Le%20module%20csv.md).
+➡️ Des exercices d'application se trouvent dans [Exercices - Module csv](Exercices/Exercices%20-%20Module%20csv.md) et [Solutions - Module csv](Exercices/Solutions%20-%20Module%20csv.md).
 
-Un exemple complet se trouve dans [Exemples/2 - Module csv](Exemples/2%20-%20Module%20csv/).
+Un exemple complet se trouve dans [Exemples/Module csv](Exemples/Module%20csv/).
