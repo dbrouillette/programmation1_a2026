@@ -1,0 +1,391 @@
+[
+    {
+        "titre": "Vive le vent",
+        "auteur": "J. Pierpont",
+        "notes": [
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 100,
+                "duree": 600
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 100,
+                "duree": 600
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "SOL4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "DO4",
+                "intensite": 90,
+                "duree": 450
+            },
+            {
+                "note": "RE4",
+                "intensite": 60,
+                "duree": 150
+            },
+            {
+                "note": "MI4",
+                "intensite": 100,
+                "duree": 1200
+            },
+            {
+                "note": "FA4",
+                "intensite": 70,
+                "duree": 300
+            },
+            {
+                "note": "FA4",
+                "intensite": 70,
+                "duree": 300
+            },
+            {
+                "note": "FA4",
+                "intensite": 70,
+                "duree": 450
+            },
+            {
+                "note": "FA4",
+                "intensite": 50,
+                "duree": 150
+            },
+            {
+                "note": "FA4",
+                "intensite": 70,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 70,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 70,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 50,
+                "duree": 150
+            },
+            {
+                "note": "MI4",
+                "intensite": 50,
+                "duree": 150
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "RE4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "RE4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 300
+            },
+            {
+                "note": "RE4",
+                "intensite": 90,
+                "duree": 600
+            },
+            {
+                "note": "SOL4",
+                "intensite": 100,
+                "duree": 600
+            }
+        ]
+    },
+    {
+        "titre": "Au clair de la lune",
+        "auteur": "Traditionnel",
+        "notes": [
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "RE4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "MI4",
+                "intensite": 90,
+                "duree": 800
+            },
+            {
+                "note": "RE4",
+                "intensite": 90,
+                "duree": 800
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "MI4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "RE4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "RE4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 100,
+                "duree": 1200
+            }
+        ]
+    },
+    {
+        "titre": "Frère Jacques",
+        "auteur": "Traditionnel",
+        "notes": [
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "RE4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "MI4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "RE4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "MI4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "FA4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "SOL4",
+                "intensite": 100,
+                "duree": 800
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "FA4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "SOL4",
+                "intensite": 100,
+                "duree": 800
+            },
+            {
+                "note": "SOL4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "LA4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "SOL4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "FA4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 400
+            },
+            {
+                "note": "SOL4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "LA4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "SOL4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "FA4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "MI4",
+                "intensite": 80,
+                "duree": 400
+            },
+            {
+                "note": "DO4",
+                "intensite": 70,
+                "duree": 800
+            }
+        ]
+    },
+    {
+        "titre": "Gamme de test (avec erreurs)",
+        "auteur": "Votre enseignant",
+        "notes": [
+            {
+                "note": "DO4",
+                "intensite": 20,
+                "duree": 200
+            },
+            {
+                "note": "RE4",
+                "intensite": 35,
+                "duree": 200
+            },
+            {
+                "note": "MI4",
+                "intensite": 50,
+                "duree": 200
+            },
+            {
+                "note": "FA4",
+                "intensite": 65,
+                "duree": 200
+            },
+            {
+                "note": "-",
+                "intensite": 0,
+                "duree": 200
+            },
+            {
+                "note": "SOL4",
+                "intensite": 80,
+                "duree": 200
+            },
+            {
+                "note": "LA4",
+                "intensite": 90,
+                "duree": 200
+            },
+            {
+                "note": "SI4",
+                "intensite": 100,
+                "duree": 200
+            },
+            {
+                "note": "DO5",
+                "intensite": 100,
+                "duree": 400
+            },
+            {
+                "note": "ZZ4",
+                "intensite": 100,
+                "duree": 200
+            }
+        ]
+    }
+]
