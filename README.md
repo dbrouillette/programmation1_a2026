@@ -80,7 +80,7 @@ Exercices :
 
 Exercices :
 
-- [Exercices et solutions du Cours 07](./Cours%2007/Exercices/) — fichiers séparés par section (7.1 à 7.4 pour l'instant).
+- [Exercices et solutions du Cours 07](./Cours%2007/Exercices/) — fichiers séparés par section.
 
 Exemples :
 
