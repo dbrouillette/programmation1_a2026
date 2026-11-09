@@ -1,4 +1,4 @@
-# Exercices — Le module csv (fiche 8.4)
+# Exercices — Le module csv (fiche « Module csv »)
 
 > 📌 **Règle de la série** : utilise le module `csv` (`csv.reader` et `csv.writer`). Plus aucun `split(",")` ni `join()` pour le CSV! Ouvre toujours les fichiers avec `encoding="utf-8"` **et** `newline=""`. Chaque saisie au clavier doit être validée.
 
@@ -6,7 +6,7 @@
 
 **But** : Remplacer le découpage à la main par `csv.reader`.
 
-**Énoncé** : Reprends ta solution de l'exercice 2 de la [série 8.3](Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (le tableau des étudiants) et convertis-la pour qu'elle utilise `csv.reader`.
+**Énoncé** : Reprends ta solution de l'exercice 2 de la [série 8.3](../../Cours%2008/Exercices/Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (le tableau des étudiants) et convertis-la pour qu'elle utilise `csv.reader`.
 
 Ajoute ensuite cette ligne à la fin du fichier `etudiants.csv` et vérifie que ton programme l'affiche correctement :
 
@@ -37,7 +37,7 @@ Ouvre ensuite `horaire.csv` dans VS Code. Que remarques-tu à la ligne du cours 
 
 **But** : Lire un CSV, filtrer ses rangées et écrire le résultat dans un autre CSV.
 
-**Énoncé** : À partir du fichier `menu.csv` de la fiche 8.4 (avec la ligne `"Muffin, bleuets"`), écris un programme qui :
+**Énoncé** : À partir du fichier `menu.csv` de la fiche « Module csv » (avec la ligne `"Muffin, bleuets"`), écris un programme qui :
 
 1. affiche les catégories présentes dans le fichier (sans doublons);
 2. demande une catégorie (validée : elle doit faire partie de la liste);
@@ -85,7 +85,7 @@ Inscription enregistrée! 3 inscrit(s) au total.
 
 **But** : Convertir un CSV d'Excel français avec le module `csv`, sans perte de données.
 
-**Énoncé** : Refais l'exercice 5 de la [série 8.3](Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (`depenses_excel.csv` → `depenses.csv`) avec le module `csv`. Cette fois, la virgule de `IGA, commande de la semaine` doit être **conservée**.
+**Énoncé** : Refais l'exercice 5 de la [série 8.3](../../Cours%2008/Exercices/Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (`depenses_excel.csv` → `depenses.csv`) avec le module `csv`. Cette fois, la virgule de `IGA, commande de la semaine` doit être **conservée**.
 
 Ajoute ensuite la fonction inverse, `exporter_pour_excel(chemin_source, chemin_destination)`, qui relit `depenses.csv` et produit `depenses_pour_excel.csv` : point-virgule, virgule décimale, encodage `"utf-8-sig"` pour qu'Excel affiche correctement les accents.
 
@@ -93,4 +93,4 @@ Vérifie que `depenses_pour_excel.csv` est identique (au contenu près) au fichi
 
 ## Solutions
 
-➡️ Les solutions se trouvent dans [Solutions 8.4 - Le module csv](Solutions%208.4%20-%20Le%20module%20csv.md).
+➡️ Les solutions se trouvent dans [Solutions - Module csv](Solutions%20-%20Module%20csv.md).

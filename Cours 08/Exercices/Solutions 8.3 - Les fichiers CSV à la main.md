@@ -271,4 +271,4 @@ main()
 
 - Dans le fichier source, la virgule de `IGA, commande de la semaine` ne pose **aucun** problème : on découpe sur `;`.
 - Le `replace(",", ".")` doit être fait **avant** `float()` : `float("143,27")` lève une `ValueError`.
-- 🤔 **Réponse à la réflexion** : le module `csv` (fiche 8.4) entoure automatiquement de guillemets une valeur qui contient le délimiteur. La description serait conservée telle quelle : `"IGA, commande de la semaine"`.
+- 🤔 **Réponse à la réflexion** : le module `csv` (fiche « Module csv » des outils) entoure automatiquement de guillemets une valeur qui contient le délimiteur. La description serait conservée telle quelle : `"IGA, commande de la semaine"`.

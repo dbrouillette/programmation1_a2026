@@ -158,7 +158,7 @@ Attention : la description `IGA, commande de la semaine` contient une virgule. D
 
 > 💡 Ouvre le fichier source avec `encoding="utf-8-sig"` : si le fichier vient vraiment d'Excel, il peut commencer par une signature invisible. Avec un fichier créé dans VS Code, `"utf-8-sig"` fonctionne aussi.
 
-> 🤔 **Réflexion** : remplacer une virgule par un espace modifie les données. Quelle meilleure solution verras-tu en 8.4?
+> 🤔 **Réflexion** : remplacer une virgule par un espace modifie les données. Quelle meilleure solution verras-tu dans la fiche sur le module `csv` (outils)?
 
 ## Solutions
 

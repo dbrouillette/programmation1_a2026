@@ -1,4 +1,4 @@
-# Exercices — Le format JSON (fiche 8.5)
+# Exercices — Le format JSON (fiche « Module json »)
 
 > 📌 **À savoir** : utilise le module `json` et ouvre toujours les fichiers avec `encoding="utf-8"`. Écris tes fichiers avec `indent=4` et `ensure_ascii=False` pour qu'ils restent lisibles. Dans cette série, on n'utilise **que des listes** : les objets JSON `{ }` (dictionnaires) seront vus au cours 9. Chaque saisie au clavier doit être validée.
 
@@ -75,7 +75,7 @@ Ouvre ensuite le fichier dans VS Code, puis relance le programme en retirant `en
 
 **But** : Convertir un fichier CSV en fichier JSON et constater que les types sont conservés.
 
-**Énoncé** : Écris un programme qui lit le fichier `menu.csv` de la fiche 8.4 avec le module `csv`, convertit le prix en `float` et le stock en `int`, puis sauvegarde la liste 2D obtenue (sans l'en-tête) dans `menu.json`.
+**Énoncé** : Écris un programme qui lit le fichier `menu.csv` de la fiche « Module csv » avec le module `csv`, convertit le prix en `float` et le stock en `int`, puis sauvegarde la liste 2D obtenue (sans l'en-tête) dans `menu.json`.
 
 Le programme recharge ensuite `menu.json` et affiche le produit le plus cher et la valeur totale du stock, **sans aucune conversion** `float()` ou `int()` dans cette deuxième partie.
 
@@ -171,4 +171,4 @@ Record actuel : 1 (Zoé)
 
 ## Solutions
 
-➡️ Les solutions se trouvent dans [Solutions 8.5 - Le format JSON](Solutions%208.5%20-%20Le%20format%20JSON.md).
+➡️ Les solutions se trouvent dans [Solutions - Module json](Solutions%20-%20Module%20json.md).

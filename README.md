@@ -87,13 +87,14 @@ Exemples :
 - [Caisse du Café Le Binaire — version 1 fichier](./Cours%2007/Exemples/1%20fichier/caisse.py)
 - [Caisse du Café Le Binaire — version 2 fichiers](./Cours%2007/Exemples/2%20fichiers/) (`caisse.py` et `utilitaires.py`)
 
-## Cours 08 — Les fichiers : texte, CSV et JSON
+## Cours 08 — Les fichiers : texte et CSV
 
 - [8.1 — Lire un fichier texte](./Cours%2008/8.1%20-%20Lire%20un%20fichier%20texte.md)
 - [8.2 — Écrire dans un fichier texte](./Cours%2008/8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md)
 - [8.3 — Les fichiers CSV à la main](./Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)
-- [8.4 — Le module csv](./Cours%2008/8.4%20-%20Le%20module%20csv.md)
-- [8.5 — Le format JSON](./Cours%2008/8.5%20-%20Le%20format%20JSON.md)
+- [Récapitulatif du cours 8](./Cours%2008/Récapitulatif%20-%20Cours%2008.md) — tout le cours sur une page
+
+> 🧰 Pour aller plus loin : les fiches [Module csv](./Outils/Fichiers%20CSV%20-%20Module%20csv.md) et [Module json](./Outils/Fichiers%20JSON%20-%20Module%20json.md) sont dans les outils.
 
 Exercices :
 
@@ -102,7 +103,6 @@ Exercices :
 Exemples :
 
 - [Inventaire du Café Le Binaire — CSV à la main](./Cours%2008/Exemples/1%20-%20CSV%20à%20la%20main/) (`inventaire.py` et `menu.csv`)
-- [Inventaire du Café Le Binaire — module csv](./Cours%2008/Exemples/2%20-%20Module%20csv/) (`inventaire.py` et `menu.csv`)
 
 ## Cours 09 — Les dictionnaires
 
@@ -126,6 +126,8 @@ Exemples :
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
 - [Date et heure - Module datetime](./Outils/Date%20et%20heure%20-%20Module%20datetime.md)
+- [Fichiers CSV - Module csv](./Outils/Fichiers%20CSV%20-%20Module%20csv.md) — [exercices](./Outils/Exercices/Exercices%20-%20Module%20csv.md), [solutions](./Outils/Exercices/Solutions%20-%20Module%20csv.md), [exemple](./Outils/Exemples/Module%20csv/) (`inventaire.py` et `menu.csv`)
+- [Fichiers JSON - Module json](./Outils/Fichiers%20JSON%20-%20Module%20json.md) — [exercices](./Outils/Exercices/Exercices%20-%20Module%20json.md), [solutions](./Outils/Exercices/Solutions%20-%20Module%20json.md)
 - [Manipulations de chaînes](./Outils/Manipulations%20de%20chaînes.md)
 - [Module math](./Outils/Module%20math.md)
 - [Nombres aléatoires - Module random](./Outils/Nombres%20aléatoires%20-%20Module%20random.md)

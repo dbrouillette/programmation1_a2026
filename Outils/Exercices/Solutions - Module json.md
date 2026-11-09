@@ -1,4 +1,4 @@
-# Solutions — Le format JSON (fiche 8.5)
+# Solutions — Le format JSON (fiche « Module json »)
 
 ## 🟢 Exercice 1 : Facile
 
