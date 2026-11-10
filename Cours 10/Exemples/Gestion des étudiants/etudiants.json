@@ -1,0 +1,19 @@
+[
+    {
+        "da": "2345678",
+        "prenom": "Abby",
+        "nom": "Tremblay",
+        "notes": [
+            85,
+            92
+        ]
+    },
+    {
+        "da": "2456789",
+        "prenom": "Éloi",
+        "nom": "Gagnon",
+        "notes": [
+            64
+        ]
+    }
+]

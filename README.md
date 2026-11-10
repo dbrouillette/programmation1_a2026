@@ -122,6 +122,22 @@ Exemples :
 
 - [Paramètres d'une application en JSON](./Cours%2009/Exemples/Paramètres%20JSON/parametres_app.py)
 
+## Cours 10 — Les classes et les objets
+
+> 🦊 Fil conducteur des fiches 10.1 et 10.2 : les renards d'un refuge faunique.
+
+- [10.1 — Introduction aux classes et aux objets](./Cours%2010/10.1%20-%20Introduction%20aux%20classes%20et%20aux%20objets.md)
+- [10.2 — Une liste d'objets](./Cours%2010/10.2%20-%20Une%20liste%20d'objets.md)
+- [10.3 — Sauvegarder et recharger une liste d'objets](./Cours%2010/10.3%20-%20Sauvegarder%20et%20recharger%20une%20liste%20d'objets.md)
+
+Exercices :
+
+- [Exercices et solutions du Cours 10](./Cours%2010/Exercices/) — fichiers séparés par section.
+
+Exemples :
+
+- [Gestion des étudiants d'un groupe-cours](./Cours%2010/Exemples/Gestion%20des%20étudiants/) (`gestion_etudiants.py` et `etudiants.json`)
+
 ## Outils / Références
 
 - [Couleurs - Module colorama](./Outils/Couleurs%20-%20Module%20colorama.md)
