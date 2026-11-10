@@ -222,7 +222,7 @@ main()
 
 - `csv.writer` fonctionne aussi en mode `"a"` : la rangée est ajoutée à la fin du fichier.
 - Si on testait `exists()` **après** `open(..., "a")`, la réponse serait toujours `True` : l'ouverture en mode `"a"` crée le fichier.
-- Le nom `Tremblay, Marie` est entouré de guillemets automatiquement, sans qu'on ait besoin de refuser la virgule comme en 8.3.
+- Le nom `Tremblay, Marie` est entouré de guillemets automatiquement, sans qu'on ait besoin de refuser la virgule comme en 8.6.
 
 ## 🔴 Exercice 5 : Moyen-Difficile
 

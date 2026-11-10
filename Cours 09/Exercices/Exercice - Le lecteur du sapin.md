@@ -72,7 +72,7 @@ Complète `charger_bibliotheque(chemin)` : elle **renvoie** la liste des chanson
 +----------------+
 ```
 
-> ⚠️ Un vrai afficheur LCD 16 × 2 ne connaît que les caractères **ASCII** (voir la fiche 8.1 sur l'encodage) : il n'a pas de lettres accentuées! C'est pourquoi le programme principal affiche « Noel du Cegep! » sans accents. Pour afficher un titre accentué, il faut donc d'abord retirer ses accents.
+> ⚠️ Un vrai afficheur LCD 16 × 2 ne connaît que les caractères **ASCII** (voir la fiche 8.2 sur l'encodage) : il n'a pas de lettres accentuées! C'est pourquoi le programme principal affiche « Noel du Cegep! » sans accents. Pour afficher un titre accentué, il faut donc d'abord retirer ses accents.
 
 ---
 
@@ -112,7 +112,7 @@ Complète `charger_bibliotheque(chemin)` : elle **renvoie** la liste des chanson
 
 ## Partie 5 — Les paramètres du lecteur
 
-On veut que le lecteur se souvienne de ses réglages d'une exécution à l'autre, dans `parametres.json`, avec le patron de la fiche 9.4 :
+On veut que le lecteur se souvienne de ses réglages d'une exécution à l'autre, dans `parametres.json`, avec le patron de la fiche 9.6 :
 
 ```python
 PARAMETRES_DEFAUT = {

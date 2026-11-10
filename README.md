@@ -89,9 +89,12 @@ Exemples :
 
 ## Cours 08 — Les fichiers : texte et CSV
 
-- [8.1 — Lire un fichier texte](./Cours%2008/8.1%20-%20Lire%20un%20fichier%20texte.md)
-- [8.2 — Écrire dans un fichier texte](./Cours%2008/8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md)
-- [8.3 — Les fichiers CSV à la main](./Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)
+- [8.1 — Ouvrir un fichier avec `with`](./Cours%2008/8.1%20-%20Ouvrir%20un%20fichier%20avec%20with.md)
+- [8.2 — L'encodage des caractères](./Cours%2008/8.2%20-%20L%27encodage%20des%20caract%C3%A8res.md)
+- [8.3 — Lire un fichier texte](./Cours%2008/8.3%20-%20Lire%20un%20fichier%20texte.md)
+- [8.4 — Écrire dans un fichier texte](./Cours%2008/8.4%20-%20%C3%89crire%20dans%20un%20fichier%20texte.md)
+- [8.5 — Sauvegarder et recharger une liste](./Cours%2008/8.5%20-%20Sauvegarder%20et%20recharger%20une%20liste.md)
+- [8.6 — Les fichiers CSV à la main](./Cours%2008/8.6%20-%20Les%20fichiers%20CSV%20%C3%A0%20la%20main.md)
 - [Récapitulatif du cours 8](./Cours%2008/Récapitulatif%20-%20Cours%2008.md) — tout le cours sur une page
 
 > 🧰 Pour aller plus loin : les fiches [Module csv](./Outils/Fichiers%20CSV%20-%20Module%20csv.md) et [Module json](./Outils/Fichiers%20JSON%20-%20Module%20json.md) sont dans les outils.
@@ -108,10 +111,12 @@ Exemples :
 
 > 🎄 Fil conducteur du cours 9 : un spectacle de Noël (musique et lumières d'un sapin).
 
-- [9.1 — Les dictionnaires](./Cours%2009/9.1%20-%20Les%20dictionnaires.md)
-- [9.2 — Parcourir un dictionnaire](./Cours%2009/9.2%20-%20Parcourir%20un%20dictionnaire.md)
-- [9.3 — Listes de dictionnaires et données imbriquées](./Cours%2009/9.3%20-%20Listes%20de%20dictionnaires%20et%20données%20imbriquées.md)
-- [9.4 — Sauvegarder les paramètres d'une application](./Cours%2009/9.4%20-%20Sauvegarder%20les%20paramètres%20d'une%20application.md)
+- [9.1 — Créer et lire un dictionnaire](./Cours%2009/9.1%20-%20Cr%C3%A9er%20et%20lire%20un%20dictionnaire.md)
+- [9.2 — Modifier un dictionnaire](./Cours%2009/9.2%20-%20Modifier%20un%20dictionnaire.md)
+- [9.3 — Parcourir un dictionnaire](./Cours%2009/9.3%20-%20Parcourir%20un%20dictionnaire.md)
+- [9.4 — Listes de dictionnaires et données imbriquées](./Cours%2009/9.4%20-%20Listes%20de%20dictionnaires%20et%20donn%C3%A9es%20imbriqu%C3%A9es.md)
+- [9.5 — Les dictionnaires en JSON](./Cours%2009/9.5%20-%20Les%20dictionnaires%20en%20JSON.md)
+- [9.6 — Sauvegarder les paramètres d'une application](./Cours%2009/9.6%20-%20Sauvegarder%20les%20param%C3%A8tres%20d%27une%20application.md)
 
 Exercices :
 
@@ -124,11 +129,15 @@ Exemples :
 
 ## Cours 10 — Les classes et les objets
 
-> 🦊 Fil conducteur des fiches 10.1 et 10.2 : les renards d'un refuge faunique.
+> 🦊 Fil conducteur des fiches 10.1 à 10.4 : les renards d'un refuge faunique. Fiches 10.5 à 10.7 : la liste des étudiants d'un groupe-cours.
 
-- [10.1 — Introduction aux classes et aux objets](./Cours%2010/10.1%20-%20Introduction%20aux%20classes%20et%20aux%20objets.md)
-- [10.2 — Une liste d'objets](./Cours%2010/10.2%20-%20Une%20liste%20d'objets.md)
-- [10.3 — Sauvegarder et recharger une liste d'objets](./Cours%2010/10.3%20-%20Sauvegarder%20et%20recharger%20une%20liste%20d'objets.md)
+- [10.1 — Classes et objets : le principe](./Cours%2010/10.1%20-%20Classes%20et%20objets%2C%20le%20principe.md)
+- [10.2 — Les méthodes](./Cours%2010/10.2%20-%20Les%20m%C3%A9thodes.md)
+- [10.3 — Une liste d'objets](./Cours%2010/10.3%20-%20Une%20liste%20d%27objets.md)
+- [10.4 — Une classe qui contient une liste d'objets](./Cours%2010/10.4%20-%20Une%20classe%20qui%20contient%20une%20liste%20d%27objets.md)
+- [10.5 — Sauvegarder des objets en JSON](./Cours%2010/10.5%20-%20Sauvegarder%20des%20objets%20en%20JSON.md)
+- [10.6 — Recharger des objets depuis un fichier JSON](./Cours%2010/10.6%20-%20Recharger%20des%20objets%20depuis%20un%20fichier%20JSON.md)
+- [10.7 — Sauvegarder et recharger des objets en CSV](./Cours%2010/10.7%20-%20Sauvegarder%20et%20recharger%20des%20objets%20en%20CSV.md)
 
 Exercices :
 

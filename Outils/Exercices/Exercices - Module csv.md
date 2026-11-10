@@ -6,7 +6,7 @@
 
 **But** : Remplacer le découpage à la main par `csv.reader`.
 
-**Énoncé** : Reprends ta solution de l'exercice 2 de la [série 8.3](../../Cours%2008/Exercices/Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (le tableau des étudiants) et convertis-la pour qu'elle utilise `csv.reader`.
+**Énoncé** : Reprends ta solution de l'exercice 2 de la [série 8.6](../../Cours%2008/Exercices/Exercices%208.6%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (le tableau des étudiants) et convertis-la pour qu'elle utilise `csv.reader`.
 
 Ajoute ensuite cette ligne à la fin du fichier `etudiants.csv` et vérifie que ton programme l'affiche correctement :
 
@@ -85,7 +85,7 @@ Inscription enregistrée! 3 inscrit(s) au total.
 
 **But** : Convertir un CSV d'Excel français avec le module `csv`, sans perte de données.
 
-**Énoncé** : Refais l'exercice 5 de la [série 8.3](../../Cours%2008/Exercices/Exercices%208.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (`depenses_excel.csv` → `depenses.csv`) avec le module `csv`. Cette fois, la virgule de `IGA, commande de la semaine` doit être **conservée**.
+**Énoncé** : Refais l'exercice 5 de la [série 8.6](../../Cours%2008/Exercices/Exercices%208.6%20-%20Les%20fichiers%20CSV%20à%20la%20main.md) (`depenses_excel.csv` → `depenses.csv`) avec le module `csv`. Cette fois, la virgule de `IGA, commande de la semaine` doit être **conservée**.
 
 Ajoute ensuite la fonction inverse, `exporter_pour_excel(chemin_source, chemin_destination)`, qui relit `depenses.csv` et produit `depenses_pour_excel.csv` : point-virgule, virgule décimale, encodage `"utf-8-sig"` pour qu'Excel affiche correctement les accents.
 

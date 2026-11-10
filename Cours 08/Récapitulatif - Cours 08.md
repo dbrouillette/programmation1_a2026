@@ -1,6 +1,6 @@
 # Récapitulatif du cours 8 : les fichiers
 
-Tout le cours 8 sur une page. Pour les détails et les exemples, retourne aux sections [8.1](8.1%20-%20Lire%20un%20fichier%20texte.md), [8.2](8.2%20-%20Écrire%20dans%20un%20fichier%20texte.md) et [8.3](8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md).
+Tout le cours 8 sur une page. Pour les détails et les exemples, retourne aux fiches : [8.1 - Ouvrir un fichier avec `with`](8.1%20-%20Ouvrir%20un%20fichier%20avec%20with.md), [8.2 - L'encodage des caractères](8.2%20-%20L'encodage%20des%20caractères.md), [8.3 - Lire un fichier texte](8.3%20-%20Lire%20un%20fichier%20texte.md), [8.4 - Écrire dans un fichier texte](8.4%20-%20Écrire%20dans%20un%20fichier%20texte.md), [8.5 - Sauvegarder et recharger une liste](8.5%20-%20Sauvegarder%20et%20recharger%20une%20liste.md) et [8.6 - Les fichiers CSV à la main](8.6%20-%20Les%20fichiers%20CSV%20à%20la%20main.md).
 
 ## 1. La recette de base
 
@@ -29,7 +29,7 @@ with open(chemin, mode, encoding="utf-8") as fichier:
 
 ## 3. Lire et écrire : texte et CSV
 
-| Je veux… | Fichier texte (8.1, 8.2) | Fichier CSV (8.3) |
+| Je veux… | Fichier texte (8.3, 8.4) | Fichier CSV (8.6) |
 | --- | --- | --- |
 | **Lire tout d'un coup** | `contenu = fichier.read()` (une seule chaîne) | — |
 | **Lire ligne par ligne** | `for ligne in fichier:` | `for ligne in fichier:` |

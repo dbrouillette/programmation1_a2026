@@ -9,7 +9,7 @@
 
 ## 1. Principe
 
-En [8.3](../Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md), on a tout fait à la main avec `split()` et `join()`. Ça fonctionne, mais ça casse dès qu'une valeur contient une virgule ou des guillemets.
+En [8.6](../Cours%2008/8.6%20-%20Les%20fichiers%20CSV%20à%20la%20main.md), on a tout fait à la main avec `split()` et `join()`. Ça fonctionne, mais ça casse dès qu'une valeur contient une virgule ou des guillemets.
 
 Le module `csv` fait **partie de Python** (rien à installer) et connaît toutes les règles du format. Il fait le découpage et l'assemblage à notre place. Tout le reste (les boucles, la liste 2D, les conversions) **ne change pas**.
 
@@ -38,7 +38,7 @@ with open("menu.csv", "r", encoding="utf-8", newline="") as fichier:
 Comparons avec la version à la main :
 
 ```python
-# Version à la main (8.3)
+# Version à la main (8.6)
 for ligne in fichier:
     champs = ligne.strip().split(",")
 
@@ -127,7 +127,7 @@ ecrivain = csv.writer(fichier, delimiter=";")
 
 > ⚠️ Le module `csv` ne touche pas aux nombres : `"4,50"` reste `"4,50"`. Pour le convertir : `float(champs[2].replace(",", "."))`.
 
-Pour un fichier exporté par Excel, l'encodage `"utf-8-sig"` (voir [8.3, section 6](../Cours%2008/8.3%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)) évite d'avoir un caractère invisible au début du premier en-tête. En **écriture**, `"utf-8-sig"` aide aussi Excel à afficher correctement les accents.
+Pour un fichier exporté par Excel, l'encodage `"utf-8-sig"` (voir [8.6, section 6](../Cours%2008/8.6%20-%20Les%20fichiers%20CSV%20à%20la%20main.md)) évite d'avoir un caractère invisible au début du premier en-tête. En **écriture**, `"utf-8-sig"` aide aussi Excel à afficher correctement les accents.
 
 ## 6. Pour aller plus loin : `csv.DictReader`
 
