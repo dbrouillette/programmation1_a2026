@@ -110,7 +110,7 @@ Marie Tremblay | marie.tremblay@exemple.ca | 819-555-0142
 Luc Tremblay   | luc@exemple.ca            | 819-555-0199
 ```
 
-> 💡 Définis des constantes `COL_NOM`, `COL_COURRIEL` et `COL_TELEPHONE` pour les index, comme en 8.3.
+> 💡 Définis des constantes `COL_NOM`, `COL_COURRIEL` et `COL_TELEPHONE` pour les index, comme en 8.6.
 
 > 🤔 **Réflexion** : comparé au CSV, qu'est-ce que JSON simplifie dans cet exercice? Le téléphone devrait-il être sauvegardé comme un nombre ou comme une chaîne?
 
